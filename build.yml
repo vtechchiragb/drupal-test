@@ -1,0 +1,34 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  namespace: c60f49-dev
+  name: 'bc-drupal10'
+spec:
+  output:
+    to:
+      kind: ImageStreamTag
+      namespace: c60f49-dev
+      name: 'drupal:latest'
+  resources:
+    limits:
+      memory: 4Gi
+    requests:
+      memory: 1Gi
+  strategy:
+    type: Docker
+    dockerStrategy:
+      from:
+        kind: ImageStreamTag
+        name: 'drupal-base:1.0'
+  source:
+    type: Git
+    git:
+      uri: 'git@github.com:vtechchiragb/bc-drupal10.git'
+      ref: main
+    sourceSecret:
+      name: 'openshiftkey'
+  trigger:
+    type: GitHub
+    github:
+        secret: RandomNumber
+  runPolicy: Serial

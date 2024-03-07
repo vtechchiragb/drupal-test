@@ -1,0 +1,38 @@
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  namespace: c60f49-dev
+  name: backend-dc
+  labels:
+    app: demo
+spec:
+  selector:
+    name: demo-backend
+    app: demo
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: demo-backend
+        app: demo
+    spec:
+      containers:
+        - name: postgresql
+          image: >-
+            image-registry.openshift-image-registry.svc:5000/c60f49-dev/postgres@sha256:fae8edf9289db459ce78aff61f854b5d8365c915e1955789bfee26bbdef162d7
+          imagePullPolicy: Always
+          restartPolicy: Always
+          ports:
+            - containerPort: 5432
+              protocol: TCP
+          env:
+            - name: POSTGRES_DB
+              value: postgres
+            - name: POSTGRES_USER
+              value: postgres
+            - name: POSTGRES_PASSWORD
+              value: postgres
+            - name: PGDATA
+              value: /db/drupal
+  strategy:
+    type: Recreate

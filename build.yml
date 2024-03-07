@@ -23,10 +23,8 @@ spec:
   source:
     type: Git
     git:
-      uri: 'git@github.com:vtechchiragb/bc-drupal10.git'
+      uri: 'https://github.com/vtechchiragb/drupal-test.git'
       ref: main
-    sourceSecret:
-      name: 'openshiftkey'
   trigger:
     type: GitHub
     github:

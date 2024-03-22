@@ -1,6 +1,6 @@
 FROM drupal:1.0
-COPY src /code
-RUN chmod -R g+rwX /code
-RUN cd /code && rm -rf .git && composer install && composer update
+COPY src /usr/share/nginx/html
+RUN chmod -R g+rwX /usr/share/nginx/html
+RUN cd /usr/share/nginx/html && rm -rf .git && composer install && composer update
 
 EXPOSE 8080

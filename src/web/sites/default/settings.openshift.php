@@ -8,5 +8,6 @@ $databases['default']['default'] = [
 'driver' => 'pgsql',
 'prefix' => '',
 'namespace' => 'Drupal\\Core\\Database\\Driver\\pgsql',
+'autoload' => 'core/modules/pgsql/src/Driver/Database/pgsql/',
 ];
 $settings['hash_salt'] = json_encode($databases);

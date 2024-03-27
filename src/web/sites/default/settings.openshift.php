@@ -9,3 +9,7 @@ $databases['default']['default'] = [
 'prefix' => ''
 ];
 $settings['hash_salt'] = json_encode($databases);
+
+ini_set('xdebug.max_nesting_level', 500);
+ini_set('memory_limit', '128M');
+ini_set('max_execution_time', 120);

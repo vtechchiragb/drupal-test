@@ -1,0 +1,43 @@
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  namespace: c60f49-dev
+  name: mysql-backend
+  labels:
+    app: mysql
+spec:
+  selector:
+    name: mysql-backend
+    app: mysql
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: mysql-backend
+        app: mysql
+    spec:
+      containers:
+        - name: mysqldb
+          image: 'image-registry.openshift-image-registry.svc:5000/c60f49-dev/mysql:1.0'
+          imagePullPolicy: Always
+          restartPolicy: Always
+          ports:
+            - containerPort: 3306
+              protocol: TCP
+          env:
+            - name: MYSQL_DB
+              value: drupal
+            - name: MYSQL_USER
+              value: drupal
+            - name: MYSQL_PASSWORD
+              value: drupal
+            - name: MYSQLDATA
+              value: /db/data
+          volumeMounts:
+            - mountPath: /db
+              name: db-data
+      volumes:
+        - name: db-data
+          emptyDir: {}
+  strategy:
+    type: Recreate

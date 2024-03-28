@@ -1,8 +1,8 @@
 <?php
 $databases['default']['default'] = [
-'database' => getenv('MYSQL_DB'),
-'username' => getenv('MYSQL_USER'),
-'password' => getenv('MYSQL_PASSWORD'),
+'database' => getenv('POSTGRES_DB'),
+'username' => getenv('POSTGRES_USER'),
+'password' => getenv('POSTGRES_PASSWORD'),
 'host' => getenv('POSTGRES_HOST'),
 'port' => getenv('POSTGRES_POST'),
 'driver' => 'pgsql',

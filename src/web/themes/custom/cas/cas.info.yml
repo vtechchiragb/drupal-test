@@ -1,0 +1,30 @@
+name: 'Crown Agencies Secretariat'
+type: theme
+description: 'Crown Agencies Secretariat subtheme based on Bootstrap 5 theme.'
+core_version_requirement: '^9.4 || ^10'
+'base theme': bootstrap5
+libraries:
+  - cas/global-styling
+ckeditor_stylesheets:
+  - css/style.css
+ckeditor5-stylesheets:
+  - css/ck5style.css
+regions:
+  nav_branding: 'Navigation branding region'
+  nav_additional: 'Additional navigation region'
+  nav_main: 'Main navigation region'
+  breadcrumb: Breadcrumbs
+  banner: 'Banner Area Region'
+  content: 'Main content'
+  workplace_area: "Workplace Area"
+  who_we_serve: "Who We Serve"
+  secretariat_area: "Crown Agency Area"
+  performance_area: "Performance Area"
+  news_area: "Latest News Area"
+  news_letter_area: "Newsletter Area"
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar Second'
+  footer_left: 'Footer Left'
+  footer_right: 'Footer Right'
+  footer_bottom: 'Footer Bottom'
+  disable: 'Disable'

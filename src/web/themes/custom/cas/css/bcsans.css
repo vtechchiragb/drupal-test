@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: 'BCSans';
+    src: url('../fonts/BCSans-Light_2g.woff2') format('woff2'),
+         url('../fonts/BCSans-Light_2g.woff') format('woff');
+    font-weight:300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BCSans';
+    src: url('../fonts/BCSans-LightItalic_2f.woff2') format('woff2'),
+         url('../fonts/BCSans-LightItalic_2f.woff') format('woff');
+    font-weight:200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BCSans';
+    src: url('../fonts/BCSans-Regular_2f.woff2') format('woff2'),
+         url('../fonts/BCSans-Regular_2f.woff') format('woff');
+    font-weight:400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'BCSans';
+    src: url('../fonts/BCSans-Bold_2f.woff2') format('woff2'),
+         url('../fonts/BCSans-Bold_2f.woff') format('woff');
+    font-weight:700;
+    font-style: normal;
+}

@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Theme override to display a single component.
+ *
+ * header area template
+ */
+#}
+
+<div class="header">
+  <div class="container">
+    <div class="row">
+      {% if page.nav_branding %}
+    
+        <div class="site-logo col-sm-4">
+          {{ page.nav_branding }}
+        </div>
+      {% endif %}
+
+      {% if page.nav_additional %}
+        <div class="additional-details col-sm-8">
+          {{ page.nav_additional }}
+        </div>
+    
+      {% endif %}
+    </div>
+  </div>
+</div>

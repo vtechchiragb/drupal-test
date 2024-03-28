@@ -1,0 +1,18 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+      css/theme.css: {}
+      css/custom.css: {}
+      css/mobile.css: {}
+  js:
+    js/simple.js: {}
+    
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.dialog
+    - core/jquery.once
+      

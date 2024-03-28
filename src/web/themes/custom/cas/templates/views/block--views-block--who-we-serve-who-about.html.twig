@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Theme override for a view.
+ *
+ * Available variables:
+ * - view: The view object.
+ * - rows: The rows of the view.
+ * - title: The title of this group of rows. May be empty.
+ * - is_grouped: True if the rows are grouped.
+ * - has_rows: True if the view output contains rows.
+ * - rows.attributes: The attributes for the rows.
+ * - rows.attributes.addClass: A list of classes for the rows.
+ * - title.attributes: The attributes for the title.
+ * - title.attributes.addClass: A list of classes for the title.
+ * - attributes: The attributes for the container.
+ * - attributes.addClass: A list of classes for the container.
+ * - plugin_id: The plugin ID for the view display.
+ * - settings: Settings for the view.
+ */
+#}
+<div{{ attributes }}>
+  <div class="container"> {{content}}
+      </div>
+</div>

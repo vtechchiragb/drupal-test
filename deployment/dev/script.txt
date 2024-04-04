@@ -1,25 +1,38 @@
 PostgreSQL:
 
-docker buildx build --no-cache -f postgres.dockerfile . -t postgres:1.0
-docker image tag postgres:1.0 image-registry.apps.silver.devops.gov.bc.ca/c60f49-prod/postgres:1.0
-docker image push image-registry.apps.silver.devops.gov.bc.ca/c60f49-prod/postgres:1.0
+docker buildx build --no-cache -f postgres.dockerfile . -t postgres:1.3
+docker image tag postgres:1.3 image-registry.apps.silver.devops.gov.bc.ca/c60f49-dev/postgres:1.3
+docker image push image-registry.apps.silver.devops.gov.bc.ca/c60f49-dev/postgres:1.3
 
 Druapl
 docker buildx build --no-cache -f Dockerfile . -t drupal-base:1.0
-docker image tag drupal-base:1.0 image-registry.apps.silver.devops.gov.bc.ca/c60f49-prod/drupal-base:1.0
-docker image push image-registry.apps.silver.devops.gov.bc.ca/c60f49-prod/drupal-base:1.0
+docker image tag drupal-base:1.0 image-registry.apps.silver.devops.gov.bc.ca/c60f49-dev/drupal-base:1.0
+docker image push image-registry.apps.silver.devops.gov.bc.ca/c60f49-dev/drupal-base:1.0
 
 Nginx
 docker buildx build --no-cache -f Dockerfile . -t nginx:1.0
-docker image tag nginx:1.0 image-registry.apps.silver.devops.gov.bc.ca/c60f49-prod/nginx:1.0
-docker image push image-registry.apps.silver.devops.gov.bc.ca/c60f49-prod/nginx:1.0
+docker image tag nginx:1.0 image-registry.apps.silver.devops.gov.bc.ca/c60f49-dev/nginx:1.0
+docker image push image-registry.apps.silver.devops.gov.bc.ca/c60f49-dev/nginx:1.0
+
+
+cp -rf /code/. /app;
+mkdir -p /contents/public;
+mkdir -p /contents/private;
+chmod 775 /contents/public;
+chmod 775 /contents/private;
+ln -s /contents/public /app/web/sites/default/files;
+ln -s /contents/private /app/private;
+php drush cr;
+php drush updb -y;
+php drush cr;
+
 
 Backend Service
 apiVersion: v1
 kind: Service
 metadata:
   name: backend-service
-  namespace: c60f49-prod
+  namespace: c60f49-dev
 spec:
   selector:
     app: demo
@@ -33,7 +46,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: drupal
-  namespace: c60f49-prod
+  namespace: c60f49-dev
 spec:
   selector:
     app: drupal
@@ -48,7 +61,7 @@ apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
   name: cas-html-allow-http
-  namespace: c60f49-prod
+  namespace: c60f49-dev
 spec:
   podSelector: {}
   ingress:
@@ -74,6 +87,6 @@ status: {}
 PostgreSQL settings
 psql -h backend-service -p 5432 -d postgres -U postgres
 
-pg_restore -h backend-service -p 5432 -d postgres -U postgres < cas-dump-20242803.sql
+pg_restore -h backend-service -p 5432 -d postgres -U postgres < cas-dump-20240404.sql
 
 CREATE EXTENSION pg_trgm;

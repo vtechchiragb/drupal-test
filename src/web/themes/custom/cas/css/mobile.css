@@ -1,14 +1,110 @@
 
 @media (min-width: 0px) and (max-width: 767px) {
 
+    #navigation-menu #block-cas-headermenu-3 {
+        display: block;
+    }
+    .additional-details #block-cas-headermenu-2 {
+        display: none;
+    }
+    #navigation-menu {
+        background:unset !important;
+    }
 
+   #block-cas-headermenu-3 ul.nav.navbar-nav {
+        flex-direction: unset;
+        margin-left: 20px;
+    }
+    #block-cas-headermenu-3 li.nav-item {
+        margin-right: 36px !important;
+    }
+    #block-cas-headermenu-3  .navbar-nav li:nth-child(1)::before {
+        content: "";
+        background: url(..//images/Support-mob.png)no-repeat;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        margin-left: -27px;
+        margin-top: 2%;
+    }
+    #block-cas-headermenu-3 .navbar-nav li:nth-child(2)::before {
+        content: "";
+        background: url(..//images/service-mob.png)no-repeat;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        margin-left: -27px;
+        margin-top: 2%;
+    }
+    #block-cas-headermenu-3 .navbar-nav li:nth-child(3)::before {
+        content: "";
+        background: url(..//images/contact-mob.png)no-repeat;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        margin-left: -27px;
+        margin-top: 2%;
+    }
+    #block-cas-headermenu-3 .navbar-nav li:nth-child(2)::after, 
+    #block-cas-headermenu-3 .navbar-nav li:nth-child(3)::after {
+        content: "|";
+        position: absolute;
+        transform: translateY(-100%);
+        margin-left: -38px !important;
+        font-size: 17px;
+    }
+    #navigation-menu a {
+        font-size: 12px !important;
+
+    }
+    a#superfish-main-toggle {
+        width: 34px;
+        height: 27px;
+        font-size: 0px;
+        background: url(../images/toggle.png) no-repeat;
+        display: block;
+        position: absolute;
+        right: 15px;
+        z-index: 999999;
+        margin-top: -18px;
+    }
+
+    .sf-accordion-toggle a.sf-expanded {
+        background: url(../images/close-mob.png) no-repeat !important;
+        width: 45px !important;
+        height: 46px !important;
+        margin-top: -18px;
+    }
+    ul#superfish-main-accordion {
+        background:#FCBA19;
+        z-index: 1111;
+        margin-top: -20px;
+    }
+    #superfish-main-accordion li a {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 28px;
+        padding: 0.5em 5%;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    #superfish-main-accordion a::before {
+        content: "• ";
+        margin-right: 5px;
+        font-size: 20px;
+        color: #fff;
+        margin-left: 9px;
+    }
+    .additional-details {
+        padding-left: unset;
+        padding-right: unset;
+    }
+   
     #navigation-menu div#block-cas-mainnavigation {
         display: none;
     }
     .additional-details #block-cas-mainnavigation-2 {
         display: block !important;
     }
-
     .additional-details #search-block-form input#edit-keys {
         display: none;
     }
@@ -44,4 +140,122 @@
          width: 12.6rem !important;
  
     }
+
+    /* kishan */
+    .banner-image .img-fluid {
+        width: 100% !important;
+        min-height: 380px;
+    }
+    .banner-title a {
+        font-size: 30px;
+        line-height: 35px; 
+    }
+    .banner-description {
+        padding: 20px 10px;
+    }
+    .banner-description p {
+        line-height: 29px;
+    }
+    .banner-body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    div#block-cas-search-form {
+        position: absolute;
+        right: 50px;
+        top: 25px;
+        left: unset;
+    }
+    .header {
+        padding: 15px 0px;
+    }
+    .additional-details {
+        display: unset!important;
+        justify-content: unset !important;
+        margin-top: unset !important;
+    }
+  
+    #our-workplace-area .left-workplace .image-border {
+        margin: 0px !important;
+    }
+    #our-workplace-area .right-workplace  {
+        margin-top: 50px !important;
+    }
+    #performance-report-area .left-permorfance .image-border {
+        margin: 0px !important;
+    }
+    #performance-report-area .right-performance  {
+        margin-top: 50px !important;
+    }
+    .subscribe-text input.btn {
+        padding: unset;
+        width: 100%;
+    }
+    .newslatter-left img {
+        width: 100% !important;
+    }
+    /* About us page */
+    .our-organ p {
+        padding: 20px;
+    }
+    .right-work .work-about {
+        line-height:40px;
+        padding: 15px;
+    }
+    .view-who-we-serve .views-col {
+        width: 100% !important;
+    }
+    .view-who-we-serve .views-col .views-field-title a {
+       
+        font-size: 18px;
+        color: #003366;
+        line-height: 18px;
+        font-weight: 700;
+    }
+    .view-who-we-serve .views-col .views-field-title {
+        padding: 13px;
+        min-height: 110px;
+    }
+    /* Perfomance and Planing */
+    #main_content_area .sidebar { 
+        width: 100%;
+    }
+    #main_content_area #midcontent_area { 
+        width: 100%;
+    }
+    .view-performance-planning-and-reporting .views-row .views-field-field-description img {
+        width: 100%;
+        height: auto;
+    }
+    .view-performance-planning-and-reporting .views-row .views-field-field-description { 
+        padding-left: 0px;
+    }
+    div#block-cas-onthispage {
+        display: block;
+        
+    }
+    ul.on-this-page {
+        list-style: none;
+        padding-left: 0;
+    }
+    div#block-cas-onthispage > h2 {
+        margin-bottom: 20px;
+    }
+    .view-performance-planning-and-reporting .views-row .views-field-field-icon {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 0px;
+    }
+    .view-performance-planning-and-reporting .views-row .views-field-field-title {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
 }
+
+@media only screen and (min-width: 658px) and (max-width: 768px)  {
+    #our-workplace-area .left-workplace .image-border {
+        margin: 10px !important;
+    }
+}   

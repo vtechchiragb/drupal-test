@@ -4,3 +4,7 @@
  * @file
  * Crown Agencies Secretariat theme file.
  */
+function cas_preprocess(&$variables, $hook){
+    
+    $variables['base_path'] = base_path();
+}

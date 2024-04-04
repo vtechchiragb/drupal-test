@@ -1,0 +1,44 @@
+PostgreSQL:
+
+docker buildx build --no-cache -f postgres.dockerfile . -t postgres:1.0
+docker image tag postgres:1.0 image-registry.apps.silver.devops.gov.bc.ca/c60f49-prod/postgres:1.0
+docker image push image-registry.apps.silver.devops.gov.bc.ca/c60f49-prod/postgres:1.0
+
+Druapl
+docker buildx build --no-cache -f Dockerfile . -t drupal-base:1.0
+docker image tag drupal-base:1.0 image-registry.apps.silver.devops.gov.bc.ca/c60f49-prod/drupal-base:1.0
+docker image push image-registry.apps.silver.devops.gov.bc.ca/c60f49-prod/drupal-base:1.0
+
+Nginx
+docker buildx build --no-cache -f Dockerfile . -t nginx:1.0
+docker image tag nginx:1.0 image-registry.apps.silver.devops.gov.bc.ca/c60f49-prod/nginx:1.0
+docker image push image-registry.apps.silver.devops.gov.bc.ca/c60f49-prod/nginx:1.0
+
+Backend Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+  namespace: c60f49-prod
+spec:
+  selector:
+    app: demo
+  ports:
+    - protocol: TCP
+      port: 5432
+      targetPort: 5432
+
+Drupal
+apiVersion: v1
+kind: Service
+metadata:
+  name: drupal
+  namespace: c60f49-prod
+spec:
+  selector:
+    app: drupal
+  ports:
+    - protocol: TCP
+      port: 8443
+      targetPort: 8443
+  sessionAffinity: ClientIP

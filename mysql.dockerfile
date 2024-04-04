@@ -1,0 +1,6 @@
+FROM mysql:latest
+
+ENV MYSQL_ROOT_PASSWORD=drupal
+ENV MYSQL_DATABASE=drupal
+ENV MYSQL_USER=drupal
+ENV MYSQL_PASSWORD=drupal

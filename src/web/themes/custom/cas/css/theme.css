@@ -1,45 +1,51 @@
 @font-face {
     font-family: 'BCSans';
     src: url('../fonts/BCSans-Light_2g.woff2') format('woff2'),
-         url('../fonts/BCSans-Light_2g.woff') format('woff');
-    font-weight:300;
+        url('../fonts/BCSans-Light_2g.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'BCSans';
     src: url('../fonts/BCSans-LightItalic_2f.woff2') format('woff2'),
-         url('../fonts/BCSans-LightItalic_2f.woff') format('woff');
-    font-weight:200;
+        url('../fonts/BCSans-LightItalic_2f.woff') format('woff');
+    font-weight: 200;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'BCSans';
     src: url('../fonts/BCSans-Regular_2f.woff2') format('woff2'),
-         url('../fonts/BCSans-Regular_2f.woff') format('woff');
-    font-weight:400;
+        url('../fonts/BCSans-Regular_2f.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
- 
+
 }
+
 @font-face {
     font-family: 'BCSans';
     src: url('../fonts/BCSans-Bold_2f.woff2') format('woff2'),
-         url('../fonts/BCSans-Bold_2f.woff') format('woff');
-    font-weight:700;
+        url('../fonts/BCSans-Bold_2f.woff') format('woff');
+    font-weight: 700;
     font-style: normal;
 }
+
 body {
     margin: 0px;
     padding: 0px;
     font-size: 14px;
     line-height: 26px;
     font-family: 'BCSans';
- 
+
 
 }
+
 p {
-    
+
     font-family: 'BCSans';
 }
+
 h1,
 h2,
 h3,
@@ -64,7 +70,47 @@ p+h6 {
 }
 
 .container {
-    max-width: 1400px !important;
+    max-width: 1180px !important;
+}
+
+/* left sidebar & right sidebar css global css */
+#maindiv {
+    margin: auto;
+    /* min-height: 300px;
+    padding-top: 25px;
+    padding-bottom: 50px; */
+    overflow: hidden;
+}
+
+#midcontent_area {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+#sidebar_first_area {
+    width: 25%;
+    float: left;
+}
+
+#sidebar_second_area {
+    width: 25%;
+    float: right;
+}
+
+body.sidebar-first #midcontent_area {
+    width: 75%;
+    float: left;
+}
+
+body.sidebar-second #midcontent_area {
+    width: 75%;
+    float: left;
+}
+
+body.Two-sidebars #midcontent_area {
+    width: 50%;
+    float: left;
 }
 
 .header {
@@ -111,7 +157,7 @@ p+h6 {
 
 #navigation-menu a {
     color: #000;
-    font-size: 17px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -129,6 +175,7 @@ p+h6 {
     color: #fff;
     margin-left: 9px;
 }
+
 #navigation-menu #superfish-main--2 li a::after {
     content: " ";
     margin-right: 5px;
@@ -137,20 +184,25 @@ p+h6 {
     border-right: 1px solid #575757;
     margin-left: 20px;
 }
+
 #navigation-menu #superfish-main--2 li:last-child a::after {
     content: unset !important;
 }
+
 .additional-details #block-cas-mainnavigation-2 {
     display: none;
 }
-#block-cas-headermenu-3 ul.nav.navbar-nav {
+
+#block-cas-headermenu-3 {
     display: none;
 }
+
 /* header css start */
 .additional-details .navbar-nav {
     position: relative;
 }
-.additional-details{
+
+.additional-details {
     display: flex;
     align-items: center;
     justify-content: end;
@@ -171,13 +223,14 @@ p+h6 {
 }
 
 .additional-details .navbar-nav li {
-    margin-right: 55px !important;
+    margin-right: 50px !important;
 }
 
 .additional-details .navbar-nav {
     flex-direction: unset !important;
 }
- .additional-details .navbar-nav li:nth-child(1)::before {
+
+.additional-details .navbar-nav li:nth-child(1)::before {
     content: "";
     background: url(..//images/support.png)no-repeat;
     position: absolute;
@@ -193,22 +246,19 @@ p+h6 {
     position: absolute;
     width: 50px;
     height: 50px;
-    margin-left: -27px;
+    margin-left: -23px;
     margin-top: 2%;
-
 }
 
 .additional-details .navbar-nav li:nth-child(3)::before {
     content: "";
     background: url(..//images/contact.png)no-repeat;
     position: absolute;
-    width: 50px;
-    height: 50px;
-    margin-left: -34px;
+    width: 40px;
+    height: 40px;
+    margin-left: -28px;
     margin-top: 2%;
-
 }
-
 .additional-details #edit-submit {
     position: absolute;
     font-size: 0;
@@ -238,7 +288,7 @@ p+h6 {
 } */
 .banner-image .img-fluid {
     width: 100% !important;
-   
+
 }
 
 .banner {
@@ -297,6 +347,50 @@ p+h6 {
     font-size: 16px;
 }
 
+/* Home subscribe section */
+
+.subscribebox {
+    background: #ffffff;
+    box-shadow: 0 0rem 1rem 0.1rem rgba(0, 0, 0, 0.07);
+    border-radius: 1rem;
+    max-width: 100%;
+    margin: 35px auto 35px auto;
+    position: relative;
+    padding: 20px 20px 10px 20px;
+
+}
+
+.newslatter-left img {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+}
+
+.subscribebox h2 {
+    color: #000;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.subscribe-text p {
+    color: #908F8F;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.subscribe-text .form-control {
+    width: 53.5%;
+    margin-top: 26px !important;
+    height: 45px;
+}
+
+/* Footer Css */
 .footer-wrapper {
     background: #003366;
 }
@@ -427,7 +521,7 @@ p+h6 {
 
 /* our workplace css */
 #block-cas-ourworkplace {
-    padding: 2rem 0 7rem;
+    padding: 0rem 0 5rem;
 }
 
 .image-border {
@@ -443,7 +537,7 @@ p+h6 {
 .image-border:before,
 .image-border:after {
     content: '';
-    width: 24.1rem;
+    width: 18.3rem;
     height: 2rem;
     background: #FDBC29;
     display: block;
@@ -528,6 +622,57 @@ p+h6 {
 }
 
 /* Performance planning and reporting css */
+
+
+
+#block-cas-views-block-performance-planning-and-reporting-block-2 {
+    display: inline-flex;
+    width: 100%;
+    border: 1px solid #E5E5E5;
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+#block-cas-views-block-performance-planning-and-reporting-block-2 h2 {
+    color: #575757;
+    font-size: 26px;
+    font-weight: 400;
+}
+#block-cas-views-block-performance-planning-and-reporting-block-2 .view-id-performance_planning_and_reporting {
+    padding: 0px 0px 0px 30px;
+}
+#block-cas-views-block-performance-planning-and-reporting-block-2 .view-performance-planning-and-reporting .views-row {
+    margin-bottom: 0px !important;
+    border-bottom: none;
+    padding-bottom: 15px;
+}
+#block-cas-views-block-performance-planning-and-reporting-block-2 .view-performance-planning-and-reporting .view-content { 
+    position: relative;
+}
+
+#block-cas-views-block-performance-planning-and-reporting-block-2 .view-performance-planning-and-reporting .views-row .onthis-page {
+    line-height: 25px;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0px;
+}
+#block-cas-views-block-performance-planning-and-reporting-block-2 .view-performance-planning-and-reporting .views-row .onthis-page::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    border-radius: 50%;
+    background-image: url(../images/on-page.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
 #block-cas-performanceplanningandreporting {
     padding: 60px 0px;
 }
@@ -683,51 +828,65 @@ p+h6 {
     float: left;
     width: 100%;
     height: 100%;
-    min-height: 10.6rem;
+    min-height: 13.0rem;
     padding-top: 10px;
     padding-left: 17px;
     padding-right: 17px;
 }
+
 .view-id-news .slick-list {
     z-index: 9;
     position: relative;
 }
+
 .view-id-news ul.slick-dots {
     z-index: 1;
     position: absolute;
 }
+
 .view-id-news li button {
     visibility: hidden;
     width: 24px;
 }
+
 .view-id-news ul.slick-dots {
     width: 100% !important;
     display: flex;
     justify-content: center;
     z-index: 9;
     font-size: 2rem;
-    /* color: #dedede; */
-}
-/* newslatter css*/
-.subscribebox {
-    background: #ffffff;
-    box-shadow: 0 0rem 1rem 0.1rem rgba(0, 0, 0, 0.07);
-    border-radius: 1rem;
-    max-width: 55rem;
-    margin: 0px auto;
-    position: relative;
-    padding-top: 50px;
-    padding-bottom: 100px;
-
 }
 
-.subscribebox h2 {
+.whole-news:hover .news-body {
+    background: #FDBC29;
+    cursor: pointer;
+}
+
+#latest-news-area {
+
+    padding: 3rem 0 4.5rem;
+}
+
+.view-id-news ul.slick-dots {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+    font-size: 2rem;
+    color: #FFF;
+    padding-left: 80px;
+    margin-top: 15px;
+}
+
+.view-id-news .slick-active {
     color: #000;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 45px;
 }
+
+.view-id-news ul.slick-dots li:hover {
+    color: #000;
+}
+
+/* newslatter css*/
 
 .subscribe-text span {
     color: #908F8F;
@@ -756,25 +915,26 @@ p+h6 {
     width: 100%;
     height: auto;
     overflow: hidden;
-  }
-  
-  .video-player {
+}
+
+.video-player {
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-  }
-  
-  .overlay-image {
+}
+
+.overlay-image {
     position: absolute;
-    top:-10px;
+    top: -10px;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.7; /* Adjust opacity as needed */
-  }
-  
-  .play-button {
+    opacity: 0.7;
+    /* Adjust opacity as needed */
+}
+
+.play-button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -783,27 +943,29 @@ p+h6 {
     background: none;
     border: none;
     cursor: pointer;
-  }
-  
-  .views-field.views-field-field-title-link {
-    width: 100%; 
-  }
-  .views-field.views-field-field-title-link .field-content {
+}
+
+.views-field.views-field-field-title-link {
+    width: 100%;
+}
+
+.views-field.views-field-field-title-link .field-content {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  .views-field.views-field-field-title-link a {
-    margin-right: 10px; 
-    text-decoration: none; 
-    color: #333;
-  }
-  .views-field.views-field-field-title-link a:hover {
-    text-decoration: underline; 
-  }
+}
 
-  /* about-us css */
-  #block-cas-ourorganization h2 {
+.views-field.views-field-field-title-link a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.views-field.views-field-field-title-link a:hover {
+    text-decoration: underline;
+}
+
+/* about-us css */
+#block-cas-ourorganization h2 {
     color: #000;
     text-align: center;
     /* font-family: "BC Sans"; */
@@ -813,9 +975,11 @@ p+h6 {
     line-height: normal;
     margin-bottom: 40px;
 }
- #block-cas-ourorganization .img-fluid {
+
+#block-cas-ourorganization .img-fluid {
     width: 100%;
 }
+
 .our-organ p {
     color: var(--gray-100, #656666);
     text-align: justify;
@@ -826,11 +990,13 @@ p+h6 {
     line-height: 30px;
     padding: 26px 40px 30px 40px;
 }
+
 .our-organ {
     border-right: 1px solid #656666;
     border-bottom: 1px solid #656666;
     border-left: 1px solid #656666;
 }
+
 #block-cas-ourworkplaceaboutus h2 {
     color: #000;
     text-align: center;
@@ -842,6 +1008,7 @@ p+h6 {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
 .right-work p {
     color: #000;
     text-align: justify;
@@ -850,17 +1017,21 @@ p+h6 {
     font-weight: 400;
     line-height: 50px;
 }
+
 .left-work {
     padding: unset;
 }
+
 .right-work {
-   padding: unset;
+    padding: unset;
 }
-.right-work .work-about{ 
+
+.right-work .work-about {
     background: #FCBA19;
-    padding: 76px 42px 34.5px 53px;
+    padding: 60px 42px 34.5px 53px;
 
 }
+
 .row.our-workplace {
     border-bottom: 25px solid #036;
 }
@@ -868,6 +1039,7 @@ p+h6 {
 .right-work p {
     margin-bottom: unset;
 }
+
 .left-workp.right-work {
     margin-bottom: unset;
 }
@@ -882,24 +1054,26 @@ p+h6 {
     text-transform: capitalize;
     padding: 40px 0px;
 }
+
 .who-we {
     background: #EFEFEF;
 }
+
 /* about Css Kishan */
 .who-we {
-    position: relative; /* This makes the .who-we container a reference point for the absolutely positioned pseudo-element */
+    position: relative;
     text-align: center;
 }
 
 .who-we::before {
-    content: ""; /* Necessary for the pseudo-element to show up */
+    content: "";
     position: absolute;
-    top: 0; /* Align to the top to mimic a top border */
+    top: 0;
     left: 0;
-    width: 100%; /* Full width */
-    height: 2px; /* The thickness of your border */
+    width: 100%;
+    height: 2px;
     background: linear-gradient(90.49deg, #003366 31.63%, #FCBA19 64.64%);
-    z-index: 1; /* Ensure it's above the content if necessary */
+    z-index: 1;
 }
 
 .who-we ul {
@@ -909,14 +1083,17 @@ p+h6 {
     padding-bottom: 10px;
     padding-left: 0px;
 }
+
 .who-we ul li:first-child {
     padding-right: 40px;
     font-size: 17px;
 }
-.who-we ul li{
+
+.who-we ul li {
     color: #7E7E7E;
     font-size: 17px;
 }
+
 #block-cas-whoweserve h2 {
     text-align: center;
     color: #000;
@@ -933,6 +1110,7 @@ p+h6 {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
 .view-who-we-serve .views-col .views-field-title {
     border: 2px solid #003366;
     border-radius: 5px;
@@ -944,69 +1122,142 @@ p+h6 {
     display: flex;
     justify-content: center;
 }
+
 .view-who-we-serve .views-col .views-field-title:hover {
     background-color: #FCBA19;
     border: 2px solid #FCBA19;
     cursor: pointer;
 }
-.view-who-we-serve .views-col .views-field-title:hover a{ 
+
+.view-who-we-serve .views-col .views-field-title:hover a {
     font-weight: 700;
 }
+
 .view-who-we-serve .views-col .views-field-title a {
     text-decoration: none;
     font-size: 15px;
     color: #003366;
     line-height: 18px;
 }
+
 .view-who-we-serve .views-col {
     width: 25% !important;
     padding-right: 8px;
     margin-bottom: 12px;
 }
-/* #workplace_area {
-    padding-top: 40px;
-    padding-bottom: 40px;
-} */
-/* ================================= */
-/* Prformance planing reporsts css  */
-.whole-performance {
-    border-radius: 5px;
-    border: 1px solid #8D8D8D;
-    padding: 20px 36px;
-}
-.perform-wrapp {
-    display: flex;
-    border-bottom: 1px dotted #000;
-    padding-bottom: 10px;
-}
-.view-performance-planning-and-reporting .views-col {
-    width: 46% !important;
-    margin-right: 48px;
 
+/* Perfomance and Planing */
+#sidebar_first_area.sidebar {
+    background-color: #003366;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 30% !important;
 }
+#sidebar_first_area.sidebar ul.navbar-nav li {
+    line-height: 25px;
+    position: relative;
+    padding-left: 40px; 
+    margin-bottom: 20px;
+}
+#sidebar_first_area.sidebar ul.navbar-nav li::before {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 38px; 
+    height: 38px; 
+    background-color: #FDBC29; 
+    border-radius: 50%; 
+    
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 50%; 
+}
+#sidebar_first_area.sidebar ul.navbar-nav li:nth-child(1)::before {
+  background-image: url(..//images/perfomance-planning.png);
+  
+}
+#sidebar_first_area.sidebar ul.navbar-nav li:nth-child(2)::before {
+    background-image: url(..//images/get-support.png);
+    
+  }
+  #sidebar_first_area.sidebar ul.navbar-nav li:nth-child(3)::before {
+    background-image: url(..//images/service-plan.png);
+    
+  }
+  #sidebar_first_area.sidebar ul.navbar-nav li:nth-child(4)::before {
+    background-image: url(..//images/annual-service-plan.png);
+    
+  }
+  #sidebar_first_area.sidebar ul.navbar-nav li:nth-child(5)::before {
+    background-image: url(..//images/crown-madtner.png);
+    
+  }
+  #sidebar_first_area.sidebar ul.navbar-nav li:nth-child(6)::before {
+    background-image: url(..//images/template-resource.png);
+    
+  }
+  #sidebar_first_area.sidebar ul.navbar-nav li a {
+    color: #FFF;
+    font-size: 17px;
+    border-bottom: 1px double #FFFFFF1A;
+}
+#sidebar_first_area.sidebar ul.navbar-nav li a:hover { 
+    color: #FDBC29;
+}
+#sidebar_first_area.sidebar ul.navbar-nav li a.is-active  { 
+    color: #FDBC29;
+}
+body.sidebar-first #midcontent_area { 
+    margin-top: 25px;
+    margin-bottom: 15px; 
+    width: 70% !important;
+}
+body.sidebar-first #midcontent_area > #content {
+    padding-left: 20px;
+}
+
+.view-performance-planning-and-reporting .views-row .views-field-field-icon {
+    display: inline-flex;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.view-performance-planning-and-reporting .views-row .views-field-field-title {
+    display: inline-flex;
+    font-size: 22px;
+    color: #003366;
+    font-weight: 700;
+}
+
+.view-performance-planning-and-reporting .views-row {
+    margin-bottom: 50px !important;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 15px;
+}
+
+.view-performance-planning-and-reporting .views-row .views-field-field-description {
+    padding-left: 46px;
+    font-size: 17px;
+    color: #656666;
+}
+
+.view-performance-planning-and-reporting .views-row .views-field-field-description ul {
+    padding-left: 33px;
+}
+
 .view-id-performance_planning_and_reporting {
     padding: 40px 0px;
 }
-.view-performance-planning-and-reporting .views-row {
-    margin-bottom: 20px;
-}
-.perform-title a {
-    color: #000 !important;
-    text-align: center;
-    font-size: 15px;
+
+.view-performance-planning-and-reporting a {
+    color: #036;
+    font-size: 17px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    text-decoration: none;
-    margin-left: 10px;
-}
-.perform-desc {
-    padding-top: 12px;
-}
-.perform-desc p {
-    color: #000;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    line-height: 32px;
+
 }

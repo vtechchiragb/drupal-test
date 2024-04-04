@@ -17,14 +17,14 @@ spec:
           emptyDir: {}
         - name: app-files
           persistentVolumeClaim:
-            claimName: backend-pcv
+            claimName: frontend-pcv
       containers:
         - name: drupal
           image: >-
-            image-registry.openshift-image-registry.svc:5000/c60f49-dev/drupal@sha256:8a436250e196a15a6ebb510e5edb2eb93aca9e24d64bbe3dfa5ec0213ed56569
+            image-registry.openshift-image-registry.svc:5000/c60f49-dev/drupal:1.2
           resources:
             limits:
-              memory: 1Gi
+              memory: 2Gi
             requests:
               memory: 512Mi
           env:
@@ -52,9 +52,12 @@ spec:
                       chmod 775 /contents/private;
                       ln -s /contents/public /app/web/sites/default/files;
                       ln -s /contents/private /app/private;
+                      drush cr;
+                      drush updb -y;
+                      drush cr;
         - name: nginx
           image: >-
-            image-registry.openshift-image-registry.svc:5000/c60f49-dev/nginx@sha256:280a332cc325190a2b2aedf7eeec14b2ac3e4fe7dd7a6c366d93aa5c31eb953c
+            image-registry.openshift-image-registry.svc:5000/c60f49-dev/nginx:5.0
           ports:
             - name: http
               containerPort: 8080

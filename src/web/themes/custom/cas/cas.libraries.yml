@@ -5,6 +5,7 @@ global-styling:
       css/theme.css: {}
       css/custom.css: {}
       css/mobile.css: {}
+      css/ipad.css: {}
   js:
     js/simple.js: {}
     

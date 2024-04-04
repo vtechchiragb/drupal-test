@@ -1,0 +1,54 @@
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  namespace: c60f49-test
+  name: drupal
+spec:
+  selector:
+    app: drupal
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: drupal
+    spec:
+      volumes:
+        - name: app-codes
+          emptyDir: {}
+        - name: app-files
+          persistentVolumeClaim:
+            claimName: frontend-pcv
+      containers:
+        - name: drupal
+          image: 'image-registry.openshift-image-registry.svc:5000/c60f49-test/drupal:1.0'
+          resources:
+            limits:
+              memory: 1Gi
+            requests:
+              memory: 512Mi
+          env:
+            - name: POSTGRES_DB
+              value: postgres
+            - name: POSTGRES_USER
+              value: postgres
+            - name: POSTGRES_PASSWORD
+              value: postgres
+            - name: POSTGRES_HOST
+              value: backend-service
+            - name: POSTGRES_PORT
+              value: '5432'
+          volumeMounts:
+            - name: app-codes
+              mountPath: /app
+            - name: app-files
+              mountPath: /contents
+        - name: nginx
+          image: 'image-registry.openshift-image-registry.svc:5000/c60f49-test/nginx:1.0'
+          ports:
+            - name: http
+              containerPort: 8443
+          volumeMounts:
+            - name: app-codes
+              mountPath: /app
+            - name: app-files
+              mountPath: /contents

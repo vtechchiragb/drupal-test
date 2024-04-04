@@ -1,0 +1,6 @@
+FROM drupal
+
+ENV MYSQL_USER=root
+ENV MYSQL_PASSWORD=password
+
+EXPOSE 8080

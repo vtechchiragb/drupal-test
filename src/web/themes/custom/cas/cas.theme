@@ -8,3 +8,15 @@ function cas_preprocess(&$variables, $hook){
     
     $variables['base_path'] = base_path();
 }
+
+function cas_preprocess_page(&$variables) {
+    // $block_superfish = \Drupal\block\Entity\Block::load('cas_sitebranding_2');
+    $block_brandLogo = \Drupal\block\Entity\Block::load('cas_sitebranding_2');
+    $render_brandLogo = \Drupal::entityTypeManager()
+      ->getViewBuilder('block')
+      ->view($block_brandLogo);
+    $variables['site_branding'] = $render_brandLogo;
+
+}
+
+

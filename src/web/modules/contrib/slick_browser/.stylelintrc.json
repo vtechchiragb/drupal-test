@@ -1,0 +1,3 @@
+{
+  "extends": "../slick/.stylelintrc.json"
+}

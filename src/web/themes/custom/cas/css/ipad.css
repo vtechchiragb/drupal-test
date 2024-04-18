@@ -13,4 +13,14 @@
         padding: unset;
         width: 100%;
     }
+    .region-service-plan {
+        display: unset;
+    }
+    div#block-cas-views-block-quick-links-service-plan {
+        width: 100% !important;
+    }
+    .tools h2 {
+             font-size: 18px;
+      
+    }
 }   

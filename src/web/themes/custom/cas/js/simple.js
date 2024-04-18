@@ -1,28 +1,3 @@
-// Searchbox add placeholder
-
-$(document).ready(function() {
-    $('#edit-keys').attr('placeholder', 'Search');
-});
-// local video Play code 
-// document.addEventListener('DOMContentLoaded', function () {
-//     var video = document.getElementById('video-player');
-//     var overlayImage = document.querySelector('.overlay-image');
-//     var playButton = document.querySelector('.play-button');
-  
-//     playButton.addEventListener('click', function () {
-//       if (video.paused) {
-//         video.play();
-//         overlayImage.style.display = 'none'; 
-//         playButton.style.display = 'none'; 
-//       }
-//     });
-//      video.addEventListener('play', function () {
-//       overlayImage.style.display = 'none';
-//       playButton.style.display = 'none';
-//     });
-//   });
-  
-
 (function ($) {
   Drupal.behaviors.videoBehavior = {
     attach: function (context, settings) {
@@ -52,3 +27,17 @@ $(document).ready(function() {
     }
   };
 })(jQuery);
+
+
+(function ($) {
+  $(document).ready(function() {
+  
+    if ($('#superfish-main-accordion').length) {
+        var blockContent = $('#block-cas-sitebranding-2').html();
+        var customBlock = '<div class="custom-block">' + blockContent + '</div>';
+       $('#superfish-main-accordion li:last').after(customBlock);
+    }
+  });
+})(jQuery);
+
+

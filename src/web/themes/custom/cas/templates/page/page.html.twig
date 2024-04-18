@@ -62,11 +62,21 @@
   </div>
 {% endif %}
 
+
+
+ {% if page.breadcrumb %}
+	<div id="whole-breadcrumb" class="container">
+		<div id="breadcrumb" class="clearfix">{{ page.page_title_area}}{{ page.breadcrumb}}</div>
+	</div>
+{% endif %}
+
 {% if page.banner %}
 	<div class="banner-area">
 		{{page.banner}}
 	</div>
 {% endif %}
+
+
 
 <div id="maindiv" class="container-fluid">
 	<div id="main_content_area" class="container">
@@ -74,6 +84,18 @@
 		{% if page.sidebar_first %}
 			<div id="sidebar_first_area" class="column sidebar">
 				{{ page.sidebar_first }}
+			</div>
+		{% endif %}
+
+		{% if page.tools %}
+			<div id="tools" class="column tools">
+				{{ page.tools }}
+			</div>
+		{% endif %}
+		
+		{% if page.service_plan %}
+			<div id="service_plan" class="column service_plan">
+				{{ page.service_plan }}
 			</div>
 		{% endif %}
 

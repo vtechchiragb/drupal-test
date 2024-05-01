@@ -40,4 +40,47 @@
   });
 })(jQuery);
 
+// Loginform element ordring changes
 
+$(document).ready(function() {
+   function reorderElements() {
+    var viewportWidth = $(window).width();
+    
+    if (viewportWidth <= 1024) { 
+      
+      $('#block-cas-userloginlogo').insertBefore('.user-login-form');
+    } else {
+      
+      $('#block-cas-content').append($('#block-cas-userloginlogo'));
+    }
+  } 
+  reorderElements();
+  $(window).resize(reorderElements);
+});
+
+
+//  Permanent link page Js
+(function ($) {
+  Drupal.behaviors.customShareFunctionality = {
+    attach: function (context, settings) {
+      $(document).ready(function () {
+        $('#shareBubble').hide();
+        $('#shareButton').click(function () {
+          $('#shareBubble').show();
+          var currentUrl = window.location.href;
+          $('#shareGuidUrl').val(currentUrl);
+        });
+        $('#closeShare').click(function () {
+          $('#shareBubble').hide();
+        });
+        var clipboardButton = document.querySelector('.clipboardButton');
+        clipboardButton.addEventListener('click', function(event) {
+          var inputElement = document.getElementById('shareGuidUrl');
+          inputElement.select();
+          document.execCommand('copy');
+          
+        });
+      });
+    }
+  };
+})(jQuery);

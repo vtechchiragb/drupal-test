@@ -6,17 +6,18 @@
  * footer area template
  */
 #}
+{% if page.footer_top and page.footer_bottom %}
 <div class="footer-wrapper">
 
   <div class="footer">
   <div class="container">
-    <div class="row footer-top">
-       {% if page.footer_left %}
-       <div class="col-sm-6 footer-left">{{ page.footer_left }}</div>
+    <div class="row">
+       {% if page.footer_top %}
+       <div class="col-sm-12 footer-top">{{ page.footer_top }}</div>
        {% endif %}
-       {% if page.footer_right %}
+       {# {% if page.footer_right %}
        <div class="col-sm-6 footer-right">{{ page.footer_right }}</div>
-       {% endif %}
+       {% endif %} #}
     </div>
     </div>
     {% if page.footer_bottom %}
@@ -26,6 +27,16 @@
     {% endif %}
   </div>
 
-  {# {{ site_branding }} #}
-
 </div>
+{% endif %}
+
+{% if page.footer_login %}
+<div class="footer-logo-wrapper">
+<div class="container">
+       <div class="footer-login">{{ page.footer_login }}</div>
+       </div>
+</div>
+{% endif %}
+
+
+

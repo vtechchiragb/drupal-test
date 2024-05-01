@@ -7,3 +7,33 @@
 
 // Include bootstrap.
 @import '../../../themes/contrib/bootstrap5/scss/style';
+
+// Components
+@import './components/home';
+@import './components/breadcrumb';
+@import './components/header';
+@import './components/footer';
+@import './components/performance';
+@import './components/aboutus';
+@import './components/serviceplan';
+@import './components/getsupport';
+@import './components/pprtemplates'; 
+@import './components/annualserviceplan';
+@import './components/login';
+@import './components/search';
+
+
+
+
+//contents
+@import './contents/node';
+@import './contents/parmanentlinkpage';
+
+// Responsive
+@import './responsive/tab';
+@import './responsive/mobile';
+
+// Utils
+@import './utils/fonts';
+
+

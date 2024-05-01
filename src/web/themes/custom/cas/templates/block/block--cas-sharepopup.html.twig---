@@ -1,0 +1,15 @@
+{# <div id="shareIcons">
+	<div id="shareContainer" style="bottom: 70px;">
+		<div title="Share This Page" id="shareButton">
+			<img src="/StaticWebResources/static/shared/img/icon_share.png" alt="Share Button">
+		</div>
+		<div id="shareBubble" class="open" style="display: block;">
+			<div class="share_heading"><h4>Permanent link to page:</h4></div>
+			<div class="share_link"><input type="text" id="shareGuidUrl" value="https://intranet.gov.bc.ca/intranet/content?id=CFF66DD9D37E490EA142A823EA92F7A0" aria-label="Share permanent link text" readonly=""></div>
+			<div class="share_link_buttons">
+				<button type="button" id="copyShare" class="clipboardButton" aria-label="Copy to clipbaord button" data-clipboard-action="copy" data-clipboard-target="#shareGuidUrl">Copy</button>
+				<button type="button" id="closeShare" aria-label="Close share flyout button">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div> #}

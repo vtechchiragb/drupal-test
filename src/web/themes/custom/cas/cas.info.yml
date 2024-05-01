@@ -26,7 +26,8 @@ regions:
   news_letter_area: "Newsletter Area"
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar Second'
-  footer_left: 'Footer Left'
-  footer_right: 'Footer Right'
+  # footer_left: 'Footer Left'
+  footer_top: 'Footer Top'
   footer_bottom: 'Footer Bottom'
+  footer_login: 'footer Login'
   disable: 'Disable'

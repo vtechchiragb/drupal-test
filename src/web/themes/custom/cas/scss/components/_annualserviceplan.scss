@@ -1,0 +1,92 @@
+/* Anuual service plan*/
+.block-views-blockperformance-planning-and-reporting-block-4 {
+    display: inline-flex;
+    width: 100%;
+    border: 1px solid #E5E5E5;
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.block-views-blockperformance-planning-and-reporting-block-4 h2 {
+    color: #575757;
+    font-size: 26px;
+    font-weight: 400;
+}
+.view-display-id-block_4 .views-row {
+    margin-bottom: 10px !important;
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.view-display-id-block_4 .views-row .onthis-page {
+    line-height: 25px;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0px;
+}
+.view-display-id-block_4 .views-row .onthis-page::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    border-radius: 50%;
+    background-image: url(../images/on-page.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.block-views-blockquick-links-block-2 {
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    margin-top: 30px;
+    padding: 20px 20px 0px 20px;
+}
+.block-views-blockquick-links-block-2 h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+}  
+.block-views-blockquick-links-block-2 table input.draggableviews-weight{
+display: none;
+}
+.block-views-blockquick-links-block-2 table.table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-color-type: none;
+    --bs-table-bg-type: none;
+    padding-right: 0;
+}
+.block-views-blockquick-links-block-2 table tr span.file {
+    background: none;
+    height: 0;
+    padding: 0;
+}
+.block-views-blockquick-links-block-2 table tr.draggable {
+    border-bottom-color: #FFF;
+}
+.block-views-blockquick-links-block-2 table tr a {
+    color: #003366;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+    word-break: break-all;
+}
+.block-views-blockquick-links-block-2 table tr a:hover {
+    color: #003366;
+}
+.block-views-blockquick-links-block-2 table tr:before {
+    content:"·";
+    font-size: 46px;
+    vertical-align: middle;
+    line-height: 38px;
+    color: #003366;
+}
+

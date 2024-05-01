@@ -1,0 +1,174 @@
+$color_1: #036;
+$color_2: #FBB425;
+$color_3: #818181;
+$color_4: #000;
+
+/* Flex container for form elements */
+/* Order the form elements */
+.path-user {
+	#maindiv {
+		width: 70%;
+		height: 600px;
+		zoom: 90%;
+	}
+}
+.left-login {
+	width: 35%;
+	float: left;
+	border-radius: 50px 0px 0px 50px;
+	background: #F1B82D;
+	padding: 104px 0px 158.5px 30px;
+	height: 500px;
+}
+form#user-login-form {
+	width: 65%;
+	float: right;
+	background: #fff;
+	padding: 16px 80px;
+	background: var(--Color-Base-White, #FFF);
+	border-radius: 0px 50px 50px 0px;
+	height: 500px;
+}
+body.path-innerpage.not-front.path-user.no-sidebars {
+	background: url(../images/banner.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+body.user-logged-in {
+	background: unset !important;
+}
+.user-login-form {
+	display: flex;
+	flex-direction: column;
+	.js-form-item {
+		margin-bottom: 10px;
+	}
+	.js-form-item.form-item-name {
+		order: 2;
+		position: relative;
+	}
+	.js-form-item.form-item-pass {
+		position: relative;
+		order: 3;
+	}
+	#edit-actions {
+		order: 4;
+		text-align: center;
+	}
+	.my-form {
+		order: 1;
+		color: $color_1;
+		font-size: 25px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-align: center;
+		margin-top: 30px;
+	}
+	.need-help {
+		order: 5;
+	}
+	#edit-name {
+		border-radius: 5px;
+		border: 1px solid #777;
+		background: var(--Color-Base-White, #FFF);
+		&:focus {
+			box-shadow: unset !important;
+		}
+	}
+	#edit-pass {
+		border-radius: 5px;
+		border: 1px solid #777;
+		background: var(--Color-Base-White, #FFF);
+		box-shadow: unset !important;
+	}
+	#edit-submit {
+		border-radius: 5px;
+		background: #036;
+		padding: 6px 30px;
+		border: unset;
+	}
+	.contact-idr {
+		color: $color_3;
+		text-align: center;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 206%;
+	}
+	.at {
+		color: $color_3;
+		text-align: center;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 206%;
+	}
+	.need-phone {
+		color: $color_1;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 206%;
+		text-align: center;
+	}
+	label[for="edit-name"] {
+		&:before {
+			content: "IDIR ";
+		}
+		position: absolute;
+		top: -13px;
+		background: #fff;
+		margin-left: 20px;
+		padding: 0px 1px;
+	}
+	label[for="edit-pass"] {
+		position: absolute;
+		top: -13px;
+		background: #fff;
+		margin-left: 20px;
+		padding: 0px 1px;
+	}
+	.form-required {
+		&::after {
+			display: none;
+		}
+	}
+}
+.need {
+	color: $color_2;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-align: center;
+}
+.need-phone {
+	a {
+		color: $color_1;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 206%;
+		text-decoration-line: underline;
+	}
+}
+.logo-login {
+	color: $color_4;
+	font-size: 27px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-top: 30px;
+}
+.logo-intranet {
+	color: $color_4;
+	font-size: 27px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+.footer-logo-wrapper {
+	background: #F5F5F5;
+}

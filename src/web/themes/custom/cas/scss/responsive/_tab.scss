@@ -1,0 +1,393 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.banner-image {
+		.img-fluid {
+			width: 100% !important;
+			min-height: 400px;
+		}
+	}
+
+	#our-workplace-area {
+		.right-workplace {
+			margin-top: 50px !important;
+		}
+	}
+
+	#performance-report-area {
+		.right-performance {
+			margin-top: 50px !important;
+		}
+	}
+
+	.subscribe-text {
+		input.btn {
+			padding: unset;
+			width: 100%;
+		}
+	}
+
+	.region-service-plan {
+		display: unset;
+	}
+
+	div#block-cas-views-block-quick-links-service-plan {
+		width: 100% !important;
+	}
+
+	.tools {
+		h2 {
+			font-size: 18px;
+		}
+	}
+
+	.path-user {
+		#maindiv {
+			width: 100%;
+			height: 100vh;
+		}
+	}
+
+	.left-login {
+		width: 100% !important;
+		float: unset !important;
+		background: #F1B82D;
+		padding: 30px;
+		height: unset !important;
+		border-radius: 50px !important;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	form#user-login-form {
+		width: 100% !important;
+		float: unset !important;
+		background: #fff;
+		padding: 0px 31px;
+		background: var(--Color-Base-White, #FFF);
+		border-radius: 50px;
+		height: 500px;
+	}
+
+	.logo-login {
+		text-align: center;
+	}
+
+	.logo-intranet-bc {
+		text-align: center;
+	}
+
+	div#block-cas-userloginlogo {
+		margin-bottom: 30px;
+	}
+
+	.footer-logo-wrapper {
+		background: #F5F5F5;
+	}
+
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1027px) {
+	.news-img {
+		img.img-fluid {
+			width: 100%;
+		}
+	}
+	.news-body {
+		padding-top: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.slick-initialized {
+		.slick-slide {
+			padding: 10px;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.image-border {
+		&:before {
+			width: 28.4rem !important;
+		}
+		&:after {
+			width: 28.4rem !important;
+		}
+	}
+	.left-description {
+		h2 {
+			font-size: 35px;
+			text-align: left;
+			margin-bottom: 13px;
+			margin-top: 10px;
+		}
+		.h2 {
+			font-size: 35px;
+			text-align: left;
+			margin-bottom: 13px;
+			margin-top: 10px;
+		}
+		p {
+			text-align: left;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 34px;
+		}
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+	.image-border {
+		&:before {
+			left: unset !important;
+		}
+		&:after {
+			width: 15.2rem !important;
+			left: unset !important;
+		}
+		position: relative;
+		margin: 3rem 0.6rem 0 0;
+	}
+	#our-workplace-area {
+		.right-workplace {
+			margin-top: 5px !important;
+		}
+	}
+	.left-description {
+		h2 {
+			font-size: 30px;
+			text-align: left;
+			margin-bottom: 10px;
+			margin-top: 0px;
+		}
+		.h2 {
+			font-size: 30px;
+			text-align: left;
+			margin-bottom: 10px;
+			margin-top: 0px;
+		}
+		p {
+			text-align: left;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 27px;
+		}
+	}
+	#performance-report-area {
+		.right-performance {
+			margin-top: 5px !important;
+		}
+	}
+	.right-performance {
+		h2 {
+			font-size: 30px;
+			text-align: left;
+			margin-bottom: 10px;
+			margin-top: 0px;
+		}
+		.h2 {
+			font-size: 30px;
+			text-align: left;
+			margin-bottom: 10px;
+			margin-top: 0px;
+		}
+		p {
+			text-align: left;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 27px;
+		}
+	}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1180px) {
+	.image-border {
+		&:before {
+			left: unset !important;
+		}
+		&:after {
+			left: unset !important;
+		}
+	}
+}
+@media only screen and (min-width: 984px) and (max-width: 1070px) {
+	.imageleftside {
+		&:before {
+			width: 20.6rem;
+		}
+		&:after {
+			width: 20.6rem;
+		}
+	}
+}
+$color_1: #fff;
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+	#block-cas-crownagenciessecretariat {
+		padding: 0px 0px;
+	}
+	.right-performance {
+		.view-more {
+			margin-top: 35px;
+		}
+	}
+	.additional-details {
+		#search-block-form {
+			input#edit-keys {
+				display: none;
+			}
+		}
+		#block-cas-mainnavigation-2 {
+			display: block !important;
+		}
+		.region.region-nav-additional {
+			display: unset;
+		}
+		#superfish-main-accordion {
+			li#main-menu-link-contentb2ad08fe-36a9-4676-bb04-fc1ef0ce603c-accordion {
+				margin-top: 80px;
+			}
+		}
+	}
+	div#block-cas-search-form {
+		position: absolute;
+		right: 65px;
+		top: 16px;
+		left: unset;
+	}
+	.header {
+		padding: 15px 41px;
+	}
+	a#superfish-main-toggle {
+		width: 34px;
+		height: 27px;
+		font-size: 0px;
+		background: url(../images/toggle.png) no-repeat;
+		display: block;
+		position: absolute;
+		right: 30px;
+		z-index: 999999;
+		top: 27px;
+	}
+	#navigation-menu {
+		#block-cas-mainnavigation {
+			display: none;
+		}
+	}
+	ul#superfish-main-accordion {
+		background: #FCBA19;
+		z-index: 1111;
+		margin-top: -68px;
+		position: fixed;
+		width: auto;
+		height: 100%;
+	}
+	.sf-accordion-toggle {
+		a.sf-expanded {
+			background: url(../images/close-mob.png) no-repeat !important;
+			width: 45px !important;
+			height: 46px !important;
+			margin-top: -18px;
+			position: fixed !important;
+		}
+	}
+	#superfish-main-accordion {
+		li {
+			a {
+				text-decoration: none;
+				font-size: 16px;
+				line-height: 28px;
+				padding: 0.5em 5%;
+				border-top: 1px solid #303030;
+				width: 91%;
+				margin-left: 15px;
+			}
+		}
+		a {
+			&::before {
+				content: "• ";
+				margin-right: 5px;
+				font-size: 20px;
+				color: $color_1;
+				margin-left: 9px;
+			}
+		}
+	}
+	.custom-block {
+		text-align: center;
+		img.img-fluid {
+			width: 228px;
+			height: 89px;
+			border-radius: 7px;
+			background: #FFF;
+			padding: 20px;
+			margin-top: 70px;
+		}
+	}
+}
+@media only screen and (min-width: 985px) and (max-width: 1180px) {
+	.header {
+		padding: 20px 41px;
+	}
+	a#superfish-main-toggle {
+		width: 34px;
+		height: 27px;
+		font-size: 0px;
+		background: url(../images/toggle.png) no-repeat;
+		display: block;
+		position: absolute;
+		right: 30px;
+		z-index: 999999;
+		top: 37px;
+	}
+	div#block-cas-search-form {
+		position: absolute;
+		right: 65px;
+		top: 29px;
+		left: unset;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+	.subscribe-text {
+		.form-control {
+			width: 100%;
+		}
+	}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1208px) {
+	.subscribe-text {
+		.form-control {
+			width: 27.3rem;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1060px) {
+	.view-who-we-serve {
+		.views-col {
+			.views-field-title {
+				min-height: 10rem;
+			}
+		}
+	}
+	.block-views-blockquick-links-block-1 {
+		table {
+			tr {
+				a {
+					word-break: break-all;
+				}
+			}
+		}
+	}
+}
+.footer-bottom {
+	ul {
+		a {
+			line-height: unset !important;
+		}
+	}
+}
+

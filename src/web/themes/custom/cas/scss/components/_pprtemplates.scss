@@ -1,0 +1,171 @@
+/* PPR Templates page Css */
+
+.tools #block-cas-pprtools {
+    display: inline-flex;
+    width: 100%;
+    border: 1px solid #E5E5E5;
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: nowrap;
+    justify-content: left;
+    margin-bottom: 25px;
+    margin-top: 27px;
+}
+.tools h2 {
+    color: #575757;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 10px;
+}
+.tools #block-cas-pprtools .field--name-body a{ 
+    color: #036;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+.tools #block-cas-pprtools .field--name-body { 
+   margin-bottom: 0px;
+}
+.block-views-blockquick-links-service-plan {
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px 20px 0px 20px;
+    margin-right: 5px;
+}
+.block-views-blockquick-links-service-plan h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+}
+.block-views-blockquick-links-service-plan table tr.draggable {
+    border-bottom-color: #FFF;
+}
+.block-views-blockquick-links-service-plan table tr:before {
+    content: "·";
+    font-size: 46px;
+    vertical-align: middle;
+    line-height: 38px;
+    color: #003366;
+}
+.block-views-blockquick-links-service-plan table.table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-color-type: none;
+    --bs-table-bg-type: none;
+    padding-right: 0;
+}
+.block-views-blockquick-links-service-plan table tr span.file {
+    background: none;
+    height: 0;
+    padding: 0;
+}
+.block-views-blockquick-links-service-plan table tr a {
+    color: #003366;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+}
+.block-views-blockquick-links-service-plan table tr td.views-field-draggableviews {
+    display: none;
+}
+#block-cas-views-block-quick-links-service-plan {
+    margin-right: 18px;
+}
+div#block-cas-contactus {
+    border-left: 10px solid #FDBC29;
+    background-color: #003366;
+    padding: 15px;
+    margin: 16px 0;
+    border-radius: 5px;
+}
+div#block-cas-contactus h2 {
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+    font-size: 17px;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    padding-left: 29px;
+}
+div#block-cas-contactus h2::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 42%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 25px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(..//images/phone-book.png);
+    background-size: 80%;
+    margin-right: 15px;
+}
+div#block-cas-contactus .field--name-body p {
+font-size: 15px;
+margin-bottom: 0px;
+color: #FFF;
+}
+div#block-cas-contactus .field--name-body a {
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: #FDBC29;;
+    }
+
+.block-views-blockquick-links-block-1 table tr td.views-field-draggableviews {
+    display: none;
+ }
+ 
+/* .block-views-blockquick-links-annual-service */
+
+.block-views-blockquick-links-annual-service {
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px 20px 0px 20px;
+    margin-left: 5px;
+}
+.block-views-blockquick-links-annual-service h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+}
+.block-views-blockquick-links-annual-service table tr.draggable {
+    border-bottom-color: #FFF;
+}
+.block-views-blockquick-links-annual-service table tr:before {
+    content: "·";
+    font-size: 46px;
+    vertical-align: middle;
+    line-height: 38px;
+    color: #003366;
+}
+.block-views-blockquick-links-annual-service table.table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-color-type: none;
+    --bs-table-bg-type: none;
+    padding-right: 0;
+}
+.block-views-blockquick-links-annual-service table tr span.file {
+    background: none;
+    height: 0;
+    padding: 0;
+}
+.block-views-blockquick-links-annual-service table tr a {
+    color: #003366;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+}
+.block-views-blockquick-links-annual-service table tr td.views-field-draggableviews {
+    display: none;
+}

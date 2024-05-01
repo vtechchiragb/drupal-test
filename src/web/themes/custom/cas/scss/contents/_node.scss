@@ -1,0 +1,98 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: 'BCSans';
+
+
+}
+
+p {
+
+    font-family: 'BCSans';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    padding: 0px;
+    margin: 0px;
+    color: #151515;
+    font-family: 'BCSans';
+}
+
+p+h1,
+p+h2,
+p+h3,
+p+h4,
+p+h5,
+p+h6 {
+    margin-top: 1.5em;
+    font-family: 'BCSans';
+}
+
+.container {
+    max-width: 1180px !important;
+}
+
+/* left sidebar & right sidebar css global css */
+#maindiv {
+    margin: auto;
+    overflow: hidden;
+}
+
+#midcontent_area {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+#sidebar_first_area {
+    width: 25%;
+    float: left;
+}
+
+#sidebar_second_area {
+    width: 25%;
+    float: right;
+}
+
+body.sidebar-first #midcontent_area {
+    width: 75%;
+    float: right;
+}
+
+body.sidebar-second #midcontent_area {
+    width: 75%;
+    float: left;
+}
+
+body.Two-sidebars #midcontent_area {
+    width: 50%;
+    float: left;
+}
+
+$background-color_1: #FFF;
+
+/* Back to Top Buton Css */
+#backtotop {
+	background-color: $background-color_1 !important;
+	border-radius: 7px;
+	box-shadow: 0px 4px 20px 0px #00000040;
+	background: url(..//images/backtotop.gif) no-repeat center center;
+	border: 0;
+	bottom: 20px;
+	cursor: pointer;
+	display: none;
+	height: 50px;
+	position: fixed;
+	right: 20px;
+	text-indent: -9999px;
+	width: 50px;
+	z-index: 300;
+}

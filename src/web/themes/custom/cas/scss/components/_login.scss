@@ -72,6 +72,7 @@ body.user-logged-in {
 	#edit-name {
 		border-radius: 5px;
 		border: 1px solid #777;
+		padding: 9px 10px;
 		background: var(--Color-Base-White, #FFF);
 		&:focus {
 			box-shadow: unset !important;
@@ -80,6 +81,7 @@ body.user-logged-in {
 	#edit-pass {
 		border-radius: 5px;
 		border: 1px solid #777;
+		padding: 9px 10px;
 		background: var(--Color-Base-White, #FFF);
 		box-shadow: unset !important;
 	}

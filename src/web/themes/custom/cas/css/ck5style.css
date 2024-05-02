@@ -13571,6 +13571,7 @@ a > .ck-content code {
 .ck-content .user-login-form #edit-name {
   border-radius: 5px;
   border: 1px solid #777;
+  padding: 9px 10px;
   background: var(--Color-Base-White, #FFF);
 }
 .ck-content .user-login-form #edit-name:focus {
@@ -13579,6 +13580,7 @@ a > .ck-content code {
 .ck-content .user-login-form #edit-pass {
   border-radius: 5px;
   border: 1px solid #777;
+  padding: 9px 10px;
   background: var(--Color-Base-White, #FFF);
   box-shadow: unset !important;
 }

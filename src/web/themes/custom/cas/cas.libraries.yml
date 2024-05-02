@@ -2,10 +2,7 @@ global-styling:
   css:
     theme:
       css/style.css: {}
-      css/theme.css: {}
       css/custom.css: {}
-      css/mobile.css: {}
-      css/ipad.css: {}
   js:
     js/simple.js: {}
     

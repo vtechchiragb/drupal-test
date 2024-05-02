@@ -74,12 +74,13 @@ $(document).ready(function() {
           $('#shareBubble').hide();
         });
         var clipboardButton = document.querySelector('.clipboardButton');
-        clipboardButton.addEventListener('click', function(event) {
-          var inputElement = document.getElementById('shareGuidUrl');
-          inputElement.select();
-          document.execCommand('copy');
-          
-        });
+        if (clipboardButton) {
+          clipboardButton.addEventListener('click', function(event) {
+            var inputElement = document.getElementById('shareGuidUrl');
+            inputElement.select();
+            document.execCommand('copy');
+          });
+        }
       });
     }
   };

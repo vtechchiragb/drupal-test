@@ -11904,7 +11904,7 @@ a > .ck-content code {
   text-align: center;
   width: 100%;
 }
-.ck-content .banner-title a {
+.ck-content .banner-title {
   color: #FFF !important;
   font-size: 50px;
   font-style: normal;

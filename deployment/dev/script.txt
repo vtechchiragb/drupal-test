@@ -1,8 +1,8 @@
 PostgreSQL:
 
-docker buildx build --no-cache -f postgres.dockerfile . -t postgres:1.3
-docker image tag postgres:1.3 image-registry.apps.silver.devops.gov.bc.ca/c60f49-dev/postgres:1.3
-docker image push image-registry.apps.silver.devops.gov.bc.ca/c60f49-dev/postgres:1.3
+docker buildx build --no-cache -f postgres.dockerfile . -t postgres:1.7
+docker image tag postgres:1.7 image-registry.apps.silver.devops.gov.bc.ca/c60f49-dev/postgres:1.7
+docker image push image-registry.apps.silver.devops.gov.bc.ca/c60f49-dev/postgres:1.7
 
 Druapl
 docker buildx build --no-cache -f Dockerfile . -t drupal-base:1.0
@@ -86,7 +86,6 @@ status: {}
 
 PostgreSQL settings
 psql -h backend-service -p 5432 -d postgres -U postgres
-
-pg_restore -h backend-service -p 5432 -d postgres -U postgres < cas-dump-20240404.sql
-
 CREATE EXTENSION pg_trgm;
+
+pg_restore -h backend-service -p 5432 -d postgres -U postgres < cas-dump-20240502.sql

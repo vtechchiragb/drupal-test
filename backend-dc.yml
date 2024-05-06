@@ -18,8 +18,7 @@ spec:
     spec:
       containers:
         - name: postgresql
-          image: >-
-            image-registry.openshift-image-registry.svc:5000/c60f49-dev/postgres@sha256:fae8edf9289db459ce78aff61f854b5d8365c915e1955789bfee26bbdef162d7
+          image: 'image-registry.openshift-image-registry.svc:5000/c60f49-dev/postgres:1.0'
           imagePullPolicy: Always
           restartPolicy: Always
           ports:
@@ -33,6 +32,12 @@ spec:
             - name: POSTGRES_PASSWORD
               value: postgres
             - name: PGDATA
-              value: /db/drupal
+              value: /db/data
+          volumeMounts:
+            - mountPath: /db
+              name: db-data
+      volumes:
+        - name: db-data
+          emptyDir: {}
   strategy:
     type: Recreate

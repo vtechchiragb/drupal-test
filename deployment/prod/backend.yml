@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: postgresql
-          image: 'image-registry.openshift-image-registry.svc:5000/c60f49-prod/postgres:1.0'
+          image: 'image-registry.openshift-image-registry.svc:5000/c60f49-prod/postgres:1.6'
           imagePullPolicy: Always
           restartPolicy: Always
           ports:

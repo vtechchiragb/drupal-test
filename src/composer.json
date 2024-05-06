@@ -29,6 +29,7 @@
         "drupal/field_formatter_file_size": "^2.0",
         "drupal/fontawesome": "^2.26",
         "drupal/imce": "^3.0",
+        "drupal/login_destination": "^2.0@beta",
         "drupal/paragraphs": "^1.17",
         "drupal/page_specific_class": "^2.0",
         "drupal/pathauto": "^1.12",

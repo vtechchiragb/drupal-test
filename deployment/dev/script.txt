@@ -88,4 +88,4 @@ PostgreSQL settings
 psql -h backend-service -p 5432 -d postgres -U postgres
 CREATE EXTENSION pg_trgm;
 
-pg_restore -h backend-service -p 5432 -d postgres -U postgres < cas-dump-20240506.sql
+pg_restore -h backend-service -p 5432 -d postgres -U postgres < cas-dump-20240529.sql

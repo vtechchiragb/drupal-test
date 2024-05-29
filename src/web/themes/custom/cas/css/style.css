@@ -13200,7 +13200,6 @@ code {
   height: 100%;
   object-fit: cover;
   opacity: 0.7;
-  /* Adjust opacity as needed */
 }
 
 .play-button {
@@ -13231,6 +13230,99 @@ code {
 
 .views-field.views-field-field-title-link a:hover {
   text-decoration: underline;
+}
+
+#our-workplace-area {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+#our-workplace-area .cas-card .card-image img {
+  width: auto;
+}
+#our-workplace-area .cas-card .card-title {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  min-height: 52px;
+}
+#our-workplace-area .cas-card .card-title a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #036;
+  font-weight: 600;
+  line-height: 15px;
+}
+#our-workplace-area .cas-card .card-desc {
+  padding-right: 22px;
+}
+#our-workplace-area .cas-card .card-desc p {
+  font-family: "BCSans";
+  text-align: left;
+  font-size: 16px;
+  color: #656666;
+}
+
+.quick-link-bg {
+  background-image: url(..//images/quick-link.png);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+}
+
+#quick-whole {
+  padding: 2.5rem;
+  background-color: #FFF;
+  border-radius: 0.75rem;
+  box-shadow: 0px 0px 22.5px 2.5px rgba(0, 0, 0, 0);
+}
+
+div#edit-mail-0-value--description {
+  display: none;
+}
+
+.quick-left {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.quick-left h1, .quick-left .h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  color: #003366;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  font-weight: 500;
+  padding-top: 25px;
+}
+.quick-left .qlinkimg {
+  text-align: left;
+}
+
+.menu--quick-links-homepage ul li {
+  font-size: 1.15rem;
+  line-height: 1.75rem;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-top: 1px solid #C9CACB;
+}
+.menu--quick-links-homepage ul li:last-child {
+  border-bottom: 1px solid #C9CACB;
+}
+.menu--quick-links-homepage ul li a {
+  column-gap: 1.25rem;
+  display: flex;
+}
+.menu--quick-links-homepage ul li a:after {
+  content: ">";
+  color: #FDBC29;
+  font-size: 25px;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-top: 0px;
 }
 
 /* breadcrumb css  */
@@ -13406,6 +13498,66 @@ code {
   display: none;
 }
 
+#superfish-main--2 > li:last-child ul {
+  left: -97px;
+  width: auto !important;
+  height: auto !important;
+}
+
+ul#superfish-main--2 {
+  text-align: center;
+}
+ul#superfish-main--2 > li {
+  float: unset;
+  position: relative;
+  z-index: 498;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+ul#superfish-main--2 li span.sf-sub-indicator {
+  display: none;
+}
+ul#superfish-main--2 li a {
+  font-size: 16px;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+ul#superfish-main--2 li ul {
+  background-color: #FFF;
+  width: 100% !important;
+  text-align: left;
+  top: 55px;
+}
+ul#superfish-main--2 li ul li a {
+  padding: 0.9rem 0.9rem;
+  font-size: 17px;
+  line-height: 20px;
+  display: block;
+  border-bottom: 0.1rem solid #cccccc;
+}
+ul#superfish-main--2 li ul li a:hover {
+  background-color: #FDBC29;
+  border-left: 3px solid #000;
+}
+ul#superfish-main--2 li ul li a:after {
+  display: none;
+}
+ul#superfish-main--2 li ul li a:before {
+  display: none;
+}
+
+li.sf-clone-parent {
+  display: none;
+}
+
+.additional-details #superfish-main-accordion li:first-child {
+  margin-top: 80px;
+}
+
 /* Footer Css */
 .footer-wrapper {
   background: #036;
@@ -13528,7 +13680,7 @@ code {
   padding: 20px;
   border-radius: 10px;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 25px;
 }
 #block-cas-views-block-performance-planning-and-reporting-block-2 h2, #block-cas-views-block-performance-planning-and-reporting-block-2 .h2 {
@@ -13947,7 +14099,7 @@ p.chart-img img {
   padding: 20px;
   border-radius: 10px;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 25px;
 }
 #block-cas-views-block-service-plans-block-2 h2, #block-cas-views-block-service-plans-block-2 .h2 {
@@ -14100,7 +14252,7 @@ p.chart-img img {
   padding: 20px;
   border-radius: 10px;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 25px;
 }
 #block-cas-views-block-get-support-block-2 h2, #block-cas-views-block-get-support-block-2 .h2 {
@@ -14503,7 +14655,7 @@ div#block-cas-contactus .field--name-body a {
   padding: 20px;
   border-radius: 10px;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 25px;
 }
 
@@ -15079,6 +15231,11 @@ div#shareButton {
   .footer-logo-wrapper {
     background: #F5F5F5;
   }
+  .view-id-cabro_ppr_portfolio .view-content {
+    position: relative;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
 }
 @media only screen and (min-width: 901px) and (max-width: 1027px) {
   .news-img img.img-fluid {
@@ -15322,6 +15479,23 @@ div#shareButton {
   line-height: unset !important;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .view-id-cabro_ppr_portfolio .view-content {
+    position: relative;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 940px) {
+  #our-workplace-area .views-col {
+    width: 50% !important;
+    margin-bottom: 20px;
+  }
+  #our-workplace-area .cas-card .card-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
 /* kishan */
 /* About us page */
 /* Perfomance and Planing */
@@ -15501,7 +15675,7 @@ div#shareButton {
   .imagerightside:after {
     width: 12.6rem !important;
   }
-  .banner-title a {
+  .banner-title {
     font-size: 30px;
     line-height: 35px;
   }
@@ -15874,7 +16048,7 @@ div#shareButton {
     padding-left: 5px !important;
     padding-right: 5px !important;
   }
-  .banner-title a {
+  .banner-title {
     font-size: 23px !important;
     line-height: 24px !important;
   }
@@ -15891,7 +16065,7 @@ div#shareButton {
     width: 100% !important;
     min-height: 320px;
   }
-  .banner-title a {
+  .banner-title {
     font-size: 26px !important;
     line-height: 29px !important;
   }
@@ -15971,6 +16145,10 @@ div#shareButton {
     font-weight: 700;
     line-height: 57px;
     font-size: 32px;
+  }
+  .mandate-letter img {
+    width: 100%;
+    height: auto;
   }
 }
 @media only screen and (min-width: 658px) and (max-width: 768px) {
@@ -16056,6 +16234,36 @@ div#shareButton {
     border-right: 1px solid;
     margin-right: 15px !important;
     border-right: 1px solid;
+  }
+}
+@media (min-width: 320px) and (max-width: 370px) {
+  #superfish-main-accordion li a {
+    padding: 0.5em 0% !important;
+    font-size: unset;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  #our-workplace-area .views-col {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  #our-workplace-area .cas-card .card-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    min-height: auto;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .quick-left h1, .quick-left .h1 {
+    font-size: 35px;
+    line-height: 1.2;
+    color: #003366;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 15px;
   }
 }
 @font-face {

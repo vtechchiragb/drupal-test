@@ -23,6 +23,8 @@ regions:
   secretariat_area: "Crown Agency Area"
   performance_area: "Performance Area"
   news_area: "Latest News Area"
+  quick_left: "Quick Left Area"
+  quick_right: "Quick Right Area" 
   news_letter_area: "Newsletter Area"
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar Second'

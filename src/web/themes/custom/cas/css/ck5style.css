@@ -12217,7 +12217,6 @@ a > .ck-content code {
   height: 100%;
   object-fit: cover;
   opacity: 0.7;
-  /* Adjust opacity as needed */
 }
 .ck-content .play-button {
   position: absolute;
@@ -12243,6 +12242,93 @@ a > .ck-content code {
 }
 .ck-content .views-field.views-field-field-title-link a:hover {
   text-decoration: underline;
+}
+.ck-content #our-workplace-area {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.ck-content #our-workplace-area .cas-card .card-image img {
+  width: auto;
+}
+.ck-content #our-workplace-area .cas-card .card-title {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  min-height: 52px;
+}
+.ck-content #our-workplace-area .cas-card .card-title a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #036;
+  font-weight: 600;
+  line-height: 15px;
+}
+.ck-content #our-workplace-area .cas-card .card-desc {
+  padding-right: 22px;
+}
+.ck-content #our-workplace-area .cas-card .card-desc p {
+  font-family: "BCSans";
+  text-align: left;
+  font-size: 16px;
+  color: #656666;
+}
+.ck-content .quick-link-bg {
+  background-image: url(..//images/quick-link.png);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+}
+.ck-content #quick-whole {
+  padding: 2.5rem;
+  background-color: #FFF;
+  border-radius: 0.75rem;
+  box-shadow: 0px 0px 22.5px 2.5px rgba(0, 0, 0, 0);
+}
+.ck-content div#edit-mail-0-value--description {
+  display: none;
+}
+.ck-content .quick-left {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.ck-content .quick-left h1, .ck-content .quick-left .h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  color: #003366;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  font-weight: 500;
+  padding-top: 25px;
+}
+.ck-content .quick-left .qlinkimg {
+  text-align: left;
+}
+.ck-content .menu--quick-links-homepage ul li {
+  font-size: 1.15rem;
+  line-height: 1.75rem;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-top: 1px solid #C9CACB;
+}
+.ck-content .menu--quick-links-homepage ul li:last-child {
+  border-bottom: 1px solid #C9CACB;
+}
+.ck-content .menu--quick-links-homepage ul li a {
+  column-gap: 1.25rem;
+  display: flex;
+}
+.ck-content .menu--quick-links-homepage ul li a:after {
+  content: ">";
+  color: #FDBC29;
+  font-size: 25px;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-top: 0px;
 }
 .ck-content .breadcrumb-item a {
   color: #036;
@@ -12410,6 +12496,62 @@ a > .ck-content code {
 .ck-content #block-cas-headermenu-3 {
   display: none;
 }
+.ck-content #superfish-main--2 > li:last-child ul {
+  left: -97px;
+  width: auto !important;
+  height: auto !important;
+}
+.ck-content ul#superfish-main--2 {
+  text-align: center;
+}
+.ck-content ul#superfish-main--2 > li {
+  float: unset;
+  position: relative;
+  z-index: 498;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.ck-content ul#superfish-main--2 li span.sf-sub-indicator {
+  display: none;
+}
+.ck-content ul#superfish-main--2 li a {
+  font-size: 16px;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+.ck-content ul#superfish-main--2 li ul {
+  background-color: #FFF;
+  width: 100% !important;
+  text-align: left;
+  top: 55px;
+}
+.ck-content ul#superfish-main--2 li ul li a {
+  padding: 0.9rem 0.9rem;
+  font-size: 17px;
+  line-height: 20px;
+  display: block;
+  border-bottom: 0.1rem solid #cccccc;
+}
+.ck-content ul#superfish-main--2 li ul li a:hover {
+  background-color: #FDBC29;
+  border-left: 3px solid #000;
+}
+.ck-content ul#superfish-main--2 li ul li a:after {
+  display: none;
+}
+.ck-content ul#superfish-main--2 li ul li a:before {
+  display: none;
+}
+.ck-content li.sf-clone-parent {
+  display: none;
+}
+.ck-content .additional-details #superfish-main-accordion li:first-child {
+  margin-top: 80px;
+}
 .ck-content .footer-wrapper {
   background: #036;
 }
@@ -12522,7 +12664,7 @@ a > .ck-content code {
   padding: 20px;
   border-radius: 10px;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 25px;
 }
 .ck-content #block-cas-views-block-performance-planning-and-reporting-block-2 h2, .ck-content #block-cas-views-block-performance-planning-and-reporting-block-2 .h2 {
@@ -12915,7 +13057,7 @@ a > .ck-content code {
   padding: 20px;
   border-radius: 10px;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 25px;
 }
 .ck-content #block-cas-views-block-service-plans-block-2 h2, .ck-content #block-cas-views-block-service-plans-block-2 .h2 {
@@ -13062,7 +13204,7 @@ a > .ck-content code {
   padding: 20px;
   border-radius: 10px;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 25px;
 }
 .ck-content #block-cas-views-block-get-support-block-2 h2, .ck-content #block-cas-views-block-get-support-block-2 .h2 {
@@ -13424,7 +13566,7 @@ a > .ck-content code {
   padding: 20px;
   border-radius: 10px;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 25px;
 }
 .ck-content .block-views-blockperformance-planning-and-reporting-block-4 h2, .ck-content .block-views-blockperformance-planning-and-reporting-block-4 .h2 {
@@ -13948,6 +14090,11 @@ a > .ck-content code {
   .ck-content .footer-logo-wrapper {
     background: #F5F5F5;
   }
+  .ck-content .view-id-cabro_ppr_portfolio .view-content {
+    position: relative;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
 }
 @media only screen and (min-width: 901px) and (max-width: 1027px) {
   .ck-content .news-img img.img-fluid {
@@ -14190,6 +14337,23 @@ a > .ck-content code {
 .ck-content .footer-bottom ul a {
   line-height: unset !important;
 }
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .ck-content .view-id-cabro_ppr_portfolio .view-content {
+    position: relative;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 940px) {
+  .ck-content #our-workplace-area .views-col {
+    width: 50% !important;
+    margin-bottom: 20px;
+  }
+  .ck-content #our-workplace-area .cas-card .card-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
 @media (min-width: 0px) and (max-width: 767px) {
   .ck-content #navigation-menu {
     background: unset !important;
@@ -14355,7 +14519,7 @@ a > .ck-content code {
   .ck-content .imagerightside:after {
     width: 12.6rem !important;
   }
-  .ck-content .banner-title a {
+  .ck-content .banner-title {
     font-size: 30px;
     line-height: 35px;
   }
@@ -14728,7 +14892,7 @@ a > .ck-content code {
     padding-left: 5px !important;
     padding-right: 5px !important;
   }
-  .ck-content .banner-title a {
+  .ck-content .banner-title {
     font-size: 23px !important;
     line-height: 24px !important;
   }
@@ -14745,7 +14909,7 @@ a > .ck-content code {
     width: 100% !important;
     min-height: 320px;
   }
-  .ck-content .banner-title a {
+  .ck-content .banner-title {
     font-size: 26px !important;
     line-height: 29px !important;
   }
@@ -14825,6 +14989,10 @@ a > .ck-content code {
     font-weight: 700;
     line-height: 57px;
     font-size: 32px;
+  }
+  .ck-content .mandate-letter img {
+    width: 100%;
+    height: auto;
   }
 }
 @media only screen and (min-width: 658px) and (max-width: 768px) {
@@ -14910,6 +15078,36 @@ a > .ck-content code {
     border-right: 1px solid;
     margin-right: 15px !important;
     border-right: 1px solid;
+  }
+}
+@media (min-width: 320px) and (max-width: 370px) {
+  .ck-content #superfish-main-accordion li a {
+    padding: 0.5em 0% !important;
+    font-size: unset;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .ck-content #our-workplace-area .views-col {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .ck-content #our-workplace-area .cas-card .card-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    min-height: auto;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .ck-content .quick-left h1, .ck-content .quick-left .h1 {
+    font-size: 35px;
+    line-height: 1.2;
+    color: #003366;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 15px;
   }
 }
 @font-face {

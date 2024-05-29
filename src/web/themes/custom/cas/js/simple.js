@@ -3,6 +3,7 @@
     attach: function (context, settings) {
       // Code for searchbox placeholder
       $('#edit-keys', context).attr('placeholder', 'Search');
+      $('#edit-mail-0-value', context).attr('placeholder', 'Enter your email address');
 
       // Code for local video play
       var video = $('#video-player', context)[0];
@@ -85,3 +86,16 @@ $(document).ready(function() {
     }
   };
 })(jQuery);
+
+
+// auto logout in tab close
+// (function ($, Drupal) {
+//   Drupal.behaviors.autoLogoutOnClose = {
+//     attach: function (context, settings) {
+//       window.addEventListener('beforeunload', function (event) {
+//         navigator.sendBeacon(Drupal.url('user/logout'));
+//       });
+//     }
+//   };
+// })(jQuery, Drupal);
+

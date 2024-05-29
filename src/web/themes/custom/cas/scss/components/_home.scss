@@ -396,7 +396,6 @@ $color_4: #726A6F;
     height: 100%;
     object-fit: cover;
     opacity: 0.7;
-    /* Adjust opacity as needed */
 }
 
 .play-button {
@@ -427,4 +426,110 @@ $color_4: #726A6F;
 
 .views-field.views-field-field-title-link a:hover {
     text-decoration: underline;
+}
+
+
+$color_1: #036;
+$color_2: #656666;
+$font-family_1: "BCSans";
+$background-color_1: #FFF;
+
+#our-workplace-area {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	.cas-card {
+		.card-image {
+			img {
+				width: auto;
+			}
+		}
+		.card-title {
+			a {
+				text-decoration: none;
+				font-size: 17px;
+				color: $color_1;
+				font-weight: 600;
+				line-height: 15px;
+			}
+			margin-top: 12px;
+			margin-bottom: 12px;
+			min-height: 52px;
+		}
+		.card-desc {
+			padding-right: 22px;
+			p {
+				font-family: $font-family_1;
+				text-align: left;
+				font-size: 16px;
+				color: $color_2;
+			}
+		}
+	}
+}
+.quick-link-bg {
+	background-image: url(..//images/quick-link.png);
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	width: 100%;
+}
+#quick-whole {
+	padding: 2.5rem;
+	background-color: $background-color_1;
+	border-radius: .75rem;
+	box-shadow: 0px 0px 22.5px 2.5px rgba(0, 0, 0, 0);
+}
+div#edit-mail-0-value--description {
+	display: none;
+}
+
+$color_1: #003366;
+$color_2: #FDBC29;
+
+.quick-left {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	h1 {
+		font-size: 4rem;
+		line-height: 1.2;
+		color: $color_1;
+		text-align: center;
+		width: 30%;
+		margin: 0 auto;
+		font-weight: 500;
+		padding-top: 25px;
+	}
+	.qlinkimg {
+		text-align: left;
+	}
+}
+.menu--quick-links-homepage {
+	ul {
+		li {
+			font-size: 1.15rem;
+			line-height: 1.75rem;
+			padding-top: .15rem;
+			padding-bottom: .15rem;
+			padding-left: .5rem;
+			padding-right: .5rem;
+			border-top: 1px solid #C9CACB;
+			&:last-child {
+				border-bottom: 1px solid #C9CACB;
+			}
+			a {
+				column-gap: 1.25rem;
+				display: flex;
+				&:after {
+					content: '\003E';
+					color: $color_2;
+					font-size: 25px;
+					font-weight: bold;
+					vertical-align: middle;
+					margin-top: 0px;
+				}
+			}
+		}
+	}
 }

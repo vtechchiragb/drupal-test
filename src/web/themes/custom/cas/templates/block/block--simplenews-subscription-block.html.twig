@@ -1,0 +1,60 @@
+
+{#
+/**
+ * @file
+ * Default theme implementation to format the simplenews newsletter body.
+ *
+ * Copy this file in your theme directory to create a custom themed body.
+ * Rename it to override it. Available templates:
+ *   simplenews-newsletter-body--[newsletter_id].html.twig
+ *   simplenews-newsletter-body--[view mode].html.twig
+ *   simplenews-newsletter-body--[newsletter_id]--[view mode].html.twig
+ * See README.txt for more details.
+ *
+ * Available variables:
+ * - title: Node title
+ * - build: The rendered newsletter issue entity.
+ * - reason: (optional) Translated text explaining why the subscriber is
+ *   receiving this newsletter.
+ * - unsubscribe_text: (optional) Translated text to describe the subscribe
+ *   link, which is available as [simplenews-subscriber:unsubscribe-url]. If
+ *   this variable isn't set then the link is likely to be unavailable.
+ * - test_message: (optional) Translated text that if set describes that this
+ *   is a test version of the newsletter
+ * - format: newsletter format [plain|html]
+ * - newsletter: object(Drupal\simplenews\Entity\Newsletter)
+ *     {{ newsletter.from_name }}: string
+ *     {{ newsletter.subject }}: string
+ *
+ * Less recommended variables that normally shouldn't be needed:
+ * - node: The issue entity that was rendered to create {{ build }}, hence
+ *   shouldn't normally need to be accessed again. There is limited access to
+ *   object properties and methods.
+ * - view_mode: The active display view mode of the node
+ * - key: email key [node|test|extra]
+ * - simplenews_subscriber: object(Drupal\simplenews\Entity\Subscriber)
+ *   The subscriber for which the newsletter is built.
+ *     {{ simplenews_subscriber.getMail  }}: string: subscriber's email address
+ *   Note that depending on the used caching strategy, the generated body might
+ *   be used for multiple subscribers. If you created personalized newsletters
+ *   and can't use tokens for that, make sure to disable caching or write a
+ *   custom caching strategy implementation.
+ *
+ * @see template_preprocess_simplenews_newsletter_body()
+ */
+#}
+
+<div class="subscribebox">
+<div class="row">
+<div class="col-sm-3 newslatter-left"><img src="{{ base_path ~ directory }}/images/Subscribe-images.png" alt="Subscribe-images.png"></div>
+<div class="col-sm-9 newslatter-right">
+<div class="subscribe-text">
+<h2>Subscribe to our Newsletter!</h2>
+
+<p><span>Be the first to get exclusive updates and the latest news</span></p>
+<p>Email addresses are collected under section 26(c) of the Freedom of Information and Protection of Privacy Act, for the purpose of providing content updates. Questions about the collection of email addresses can be directed to the Manager of Corporate Web, Government Digital Experience Division. PO Box 9409, Stn Prov Govt, Victoria, BC V8W 9V1 Submit.</p>
+
+{{content}}</div>
+</div>
+</div>
+</div>

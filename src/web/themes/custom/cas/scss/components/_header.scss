@@ -158,3 +158,80 @@ $color_2: #fff;
 #block-cas-headermenu-3 {
 	display: none;
 }
+
+#superfish-main--2 {
+	>li {
+		&:last-child {
+			ul {
+				left: -97px;
+				width: auto !important;
+				height: auto !important;
+			}
+		}
+	}
+}
+
+$background-color_1: #FFF;
+$background-color_2: #FDBC29;
+
+ul#superfish-main--2 {
+	text-align: center;
+	>li {
+		float: unset;
+		position: relative;
+		z-index: 498;
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: center;
+		justify-content: center;
+		align-items: center;
+	}
+	li {
+		span.sf-sub-indicator {
+			display: none;
+		}
+		a {
+			font-size: 16px;
+			padding-top: 0.8em;
+			padding-bottom: 0.8em;
+		}
+		ul {
+			background-color: $background-color_1;
+			width: 100% !important;
+			text-align: left;
+			top: 55px;
+			li {
+				a {
+					padding: 0.9rem 0.9rem;
+					font-size: 17px;
+					line-height: 20px;
+					display: block;
+					border-bottom: 0.1rem solid #cccccc;
+					&:hover {
+						background-color: $background-color_2;
+						border-left: 3px solid #000;
+					}
+					&:after {
+						display: none;
+					}
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+li.sf-clone-parent {
+	display: none;
+}
+.additional-details {
+	#superfish-main-accordion {
+		li {
+			&:first-child {
+				margin-top: 80px;
+			}
+		}
+	}
+}

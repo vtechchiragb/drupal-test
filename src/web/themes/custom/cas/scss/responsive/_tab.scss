@@ -86,6 +86,15 @@
 		background: #F5F5F5;
 	}
 
+.view-id-cabro_ppr_portfolio {
+	.view-content {
+		position: relative;
+		overflow-y: auto;
+		margin-bottom: 20px;
+	}
+}
+
+
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1027px) {
@@ -391,3 +400,25 @@ $color_1: #fff;
 	}
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1366px){
+	.view-id-cabro_ppr_portfolio .view-content {
+        position: relative;
+        overflow-y: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 940px) {
+	#our-workplace-area {
+		.views-col {
+			width: 50% !important;
+			margin-bottom: 20px;
+		}
+		.cas-card {
+			.card-title {
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

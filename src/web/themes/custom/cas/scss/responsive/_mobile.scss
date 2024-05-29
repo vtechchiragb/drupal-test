@@ -228,10 +228,9 @@ $color_6: #726A6F;
 		}
 	}
 	.banner-title {
-		a {
+
 			font-size: 30px;
 			line-height: 35px;
-		}
 	}
 	.banner-description {
 		padding: 20px 10px;
@@ -678,10 +677,8 @@ ul#superfish-main-accordion {
 		padding-right: 5px !important;
 	}
 	.banner-title {
-		a {
 			font-size: 23px !important;
 			line-height: 24px !important;
-		}
 	}
 	.banner-description {
 		p {
@@ -699,10 +696,9 @@ ul#superfish-main-accordion {
 		}
 	}
 	.banner-title {
-		a {
 			font-size: 26px !important;
 			line-height: 29px !important;
-		}
+
 	}
 	.banner-description {
 		p {
@@ -787,6 +783,12 @@ ul#superfish-main-accordion {
 			font-weight: 700;
 			line-height: 57px;
 			font-size: 32px;
+		}
+	}
+	.mandate-letter {
+		img {
+			width: 100%;
+			height: auto;
 		}
 	}
 }
@@ -912,6 +914,47 @@ ul#superfish-main-accordion {
 			border-right: 1px solid;
 			margin-right: 15px !important;
 			border-right: 1px solid;
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 370px){
+	#superfish-main-accordion li a {
+		padding: 0.5em 0% !important;
+		font-size: unset;
+	}
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+	#our-workplace-area {
+		.views-col {
+			width: 100% !important;
+			margin-bottom: 20px;
+		}
+		.cas-card {
+			.card-title {
+				margin-top: 20px;
+				margin-bottom: 10px;
+				min-height: auto;
+			}
+		}
+	}
+}
+$color_1: #003366;
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+	.quick-left {
+		h1 {
+			font-size: 35px;
+			line-height: 1.2;
+			color: $color_1;
+			text-align: left;
+			width: 100%;
+			margin: 0 auto;
+			font-weight: 500;
+			padding-top: 20px;
+			padding-bottom: 15px;
 		}
 	}
 }

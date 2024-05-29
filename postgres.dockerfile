@@ -7,5 +7,5 @@ RUN chown -R non-root-postgres-user:non-root-postgres-group /db
 RUN chmod 777 /db
 RUN chmod 777 /dump
 
-COPY cas-dump-20240506.sql /dump/cas-dump-20240506.sql
+COPY cas-dump-20240529.sql /dump/cas-dump-20240529.sql
 USER non-root-postgres

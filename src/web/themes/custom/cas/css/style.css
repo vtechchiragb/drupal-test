@@ -15236,6 +15236,19 @@ div#shareButton {
     overflow-y: auto;
     margin-bottom: 20px;
   }
+  #main_content_area {
+    display: flex;
+    flex-direction: column;
+  }
+  #main_content_area #midcontent_area {
+    width: 100% !important;
+    order: 1;
+    margin-top: 0;
+  }
+  #main_content_area .sidebar {
+    width: 100% !important;
+    order: 2;
+  }
 }
 @media only screen and (min-width: 901px) and (max-width: 1027px) {
   .news-img img.img-fluid {

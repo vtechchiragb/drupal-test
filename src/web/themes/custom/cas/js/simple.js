@@ -30,16 +30,29 @@
 })(jQuery);
 
 
+// (function ($) {
+//   $(document).ready(function() {
+  
+//     if ($('#superfish-main-accordion').length) {
+//         var blockContent = $('#block-cas-sitebranding-2').html();
+//         var customBlock = '<div class="custom-block">' + blockContent + '</div>';
+//        $('#superfish-main-accordion li:last').after(customBlock);
+//     }
+//   });
+// })(jQuery);
+
 (function ($) {
   $(document).ready(function() {
   
     if ($('#superfish-main-accordion').length) {
         var blockContent = $('#block-cas-sitebranding-2').html();
         var customBlock = '<div class="custom-block">' + blockContent + '</div>';
-       $('#superfish-main-accordion li:last').after(customBlock);
+  
+        $('#superfish-main-accordion > li:contains("Our Partners")').append(customBlock);
     }
   });
 })(jQuery);
+
 
 // Loginform element ordring changes
 

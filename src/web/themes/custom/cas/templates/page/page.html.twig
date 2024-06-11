@@ -141,11 +141,6 @@
 </div>
 {% endif %}
 
-{% if page.news_area %}
-<div id="latest-news-area" class="container-fluid">
-	<div id="news-area" class="container">{{ page.news_area}}</div>
-</div>
-{% endif %}
 
 {% if page.quick_left and page.quick_right %}
 <div class="quick-link-bg">
@@ -161,6 +156,12 @@
 {% if page.news_letter_area %}
 <div id="news-letter-area" class="container-fluid">
 	<div id="news-letter" class="container">{{ page.news_letter_area}}</div>
+</div>
+{% endif %}
+
+{% if page.news_area %}
+<div id="latest-news-area" class="container-fluid">
+	<div id="news-area" class="container">{{ page.news_area}}</div>
 </div>
 {% endif %}
 

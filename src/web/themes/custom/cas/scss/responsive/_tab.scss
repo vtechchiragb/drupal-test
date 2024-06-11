@@ -86,13 +86,30 @@
 		background: #F5F5F5;
 	}
 
-.view-id-cabro_ppr_portfolio {
-	.view-content {
-		position: relative;
-		overflow-y: auto;
-		margin-bottom: 20px;
+	.view-id-cabro_ppr_portfolio {
+		.view-content {
+			position: relative;
+			overflow-y: auto;
+			margin-bottom: 20px;
+		}
 	}
-}
+
+	#main_content_area {
+		display: flex;
+		flex-direction: column;
+
+		#midcontent_area {
+			width: 100% !important;
+			order: 1;
+			margin-top: 0;
+		}
+
+		.sidebar {
+			width: 100% !important;
+			order: 2;
+		}
+	}
+
 
 
 }
@@ -103,11 +120,13 @@
 			width: 100%;
 		}
 	}
+
 	.news-body {
 		padding-top: 15px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+
 	.slick-initialized {
 		.slick-slide {
 			padding: 10px;
@@ -120,10 +139,12 @@
 		&:before {
 			width: 28.4rem !important;
 		}
+
 		&:after {
 			width: 28.4rem !important;
 		}
 	}
+
 	.left-description {
 		h2 {
 			font-size: 35px;
@@ -131,12 +152,14 @@
 			margin-bottom: 13px;
 			margin-top: 10px;
 		}
+
 		.h2 {
 			font-size: 35px;
 			text-align: left;
 			margin-bottom: 13px;
 			margin-top: 10px;
 		}
+
 		p {
 			text-align: left;
 			font-size: 18px;
@@ -146,23 +169,28 @@
 		}
 	}
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
 	.image-border {
 		&:before {
 			left: unset !important;
 		}
+
 		&:after {
 			width: 15.2rem !important;
 			left: unset !important;
 		}
+
 		position: relative;
 		margin: 3rem 0.6rem 0 0;
 	}
+
 	#our-workplace-area {
 		.right-workplace {
 			margin-top: 5px !important;
 		}
 	}
+
 	.left-description {
 		h2 {
 			font-size: 30px;
@@ -170,12 +198,14 @@
 			margin-bottom: 10px;
 			margin-top: 0px;
 		}
+
 		.h2 {
 			font-size: 30px;
 			text-align: left;
 			margin-bottom: 10px;
 			margin-top: 0px;
 		}
+
 		p {
 			text-align: left;
 			font-size: 15px;
@@ -184,11 +214,13 @@
 			line-height: 27px;
 		}
 	}
+
 	#performance-report-area {
 		.right-performance {
 			margin-top: 5px !important;
 		}
 	}
+
 	.right-performance {
 		h2 {
 			font-size: 30px;
@@ -196,12 +228,14 @@
 			margin-bottom: 10px;
 			margin-top: 0px;
 		}
+
 		.h2 {
 			font-size: 30px;
 			text-align: left;
 			margin-bottom: 10px;
 			margin-top: 0px;
 		}
+
 		p {
 			text-align: left;
 			font-size: 15px;
@@ -211,64 +245,77 @@
 		}
 	}
 }
+
 @media only screen and (min-width: 1025px) and (max-width: 1180px) {
 	.image-border {
 		&:before {
 			left: unset !important;
 		}
+
 		&:after {
 			left: unset !important;
 		}
 	}
 }
+
 @media only screen and (min-width: 984px) and (max-width: 1070px) {
 	.imageleftside {
 		&:before {
 			width: 20.6rem;
 		}
+
 		&:after {
 			width: 20.6rem;
 		}
 	}
 }
+
 $color_1: #fff;
 
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
 	#block-cas-crownagenciessecretariat {
 		padding: 0px 0px;
 	}
+
 	.right-performance {
 		.view-more {
 			margin-top: 35px;
 		}
 	}
+
 	.additional-details {
 		#search-block-form {
 			input#edit-keys {
 				display: none;
 			}
 		}
+
 		#block-cas-mainnavigation-2 {
 			display: block !important;
 		}
+
 		.region.region-nav-additional {
 			display: unset;
 		}
+
 		#superfish-main-accordion {
 			li#main-menu-link-contentb2ad08fe-36a9-4676-bb04-fc1ef0ce603c-accordion {
 				margin-top: 80px;
 			}
 		}
 	}
+
 	div#block-cas-search-form {
 		position: absolute;
 		right: 65px;
 		top: 16px;
 		left: unset;
 	}
+
 	.header {
 		padding: 15px 41px;
 	}
+
 	a#superfish-main-toggle {
 		width: 34px;
 		height: 27px;
@@ -280,11 +327,13 @@ $color_1: #fff;
 		z-index: 999999;
 		top: 27px;
 	}
+
 	#navigation-menu {
 		#block-cas-mainnavigation {
 			display: none;
 		}
 	}
+
 	ul#superfish-main-accordion {
 		background: #FCBA19;
 		z-index: 1111;
@@ -293,6 +342,7 @@ $color_1: #fff;
 		width: auto;
 		height: 100%;
 	}
+
 	.sf-accordion-toggle {
 		a.sf-expanded {
 			background: url(../images/close-mob.png) no-repeat !important;
@@ -302,6 +352,7 @@ $color_1: #fff;
 			position: fixed !important;
 		}
 	}
+
 	#superfish-main-accordion {
 		li {
 			a {
@@ -314,6 +365,7 @@ $color_1: #fff;
 				margin-left: 15px;
 			}
 		}
+
 		a {
 			&::before {
 				content: "• ";
@@ -324,8 +376,10 @@ $color_1: #fff;
 			}
 		}
 	}
+
 	.custom-block {
 		text-align: center;
+
 		img.img-fluid {
 			width: 228px;
 			height: 89px;
@@ -336,10 +390,12 @@ $color_1: #fff;
 		}
 	}
 }
+
 @media only screen and (min-width: 985px) and (max-width: 1180px) {
 	.header {
 		padding: 20px 41px;
 	}
+
 	a#superfish-main-toggle {
 		width: 34px;
 		height: 27px;
@@ -351,6 +407,7 @@ $color_1: #fff;
 		z-index: 999999;
 		top: 37px;
 	}
+
 	div#block-cas-search-form {
 		position: absolute;
 		right: 65px;
@@ -366,6 +423,7 @@ $color_1: #fff;
 		}
 	}
 }
+
 @media only screen and (min-width: 1025px) and (max-width: 1208px) {
 	.subscribe-text {
 		.form-control {
@@ -382,6 +440,7 @@ $color_1: #fff;
 			}
 		}
 	}
+
 	.block-views-blockquick-links-block-1 {
 		table {
 			tr {
@@ -392,6 +451,7 @@ $color_1: #fff;
 		}
 	}
 }
+
 .footer-bottom {
 	ul {
 		a {
@@ -400,12 +460,12 @@ $color_1: #fff;
 	}
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px){
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
 	.view-id-cabro_ppr_portfolio .view-content {
-        position: relative;
-        overflow-y: auto;
-        margin-bottom: 20px;
-    }
+		position: relative;
+		overflow-y: auto;
+		margin-bottom: 20px;
+	}
 }
 
 @media only screen and (min-width: 701px) and (max-width: 940px) {
@@ -414,6 +474,7 @@ $color_1: #fff;
 			width: 50% !important;
 			margin-bottom: 20px;
 		}
+
 		.cas-card {
 			.card-title {
 				margin-top: 20px;

@@ -22,10 +22,10 @@ regions:
   who_we_serve: "Who We Serve"
   secretariat_area: "Crown Agency Area"
   performance_area: "Performance Area"
-  news_area: "Latest News Area"
   quick_left: "Quick Left Area"
   quick_right: "Quick Right Area" 
   news_letter_area: "Newsletter Area"
+  news_area: "Latest News Area"
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar Second'
   # footer_left: 'Footer Left'

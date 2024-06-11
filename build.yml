@@ -1,14 +1,14 @@
 apiVersion: build.openshift.io/v1
 kind: BuildConfig
 metadata:
-  namespace: c60f49-prod
+  namespace: c60f49-dev
   name: 'drupal-prod'
 spec:
   output:
     to:
       kind: ImageStreamTag
-      namespace: c60f49-prod
-      name: 'drupal:1.0'
+      namespace: c60f49-dev
+      name: 'drupal:1.1'
   resources:
     limits:
       memory: 4Gi

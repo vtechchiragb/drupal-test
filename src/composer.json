@@ -31,6 +31,7 @@
         "drupal/imce": "^3.0",
         "drupal/inactive_autologout": "^3.0",
         "drupal/login_destination": "^2.0@beta",
+        "drupal/openid_connect": "^3.0@alpha",
         "drupal/paragraphs": "^1.17",
         "drupal/page_specific_class": "^2.0",
         "drupal/pathauto": "^1.12",

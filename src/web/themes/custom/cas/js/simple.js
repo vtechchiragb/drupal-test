@@ -79,7 +79,7 @@ $(document).ready(function() {
     attach: function (context, settings) {
       $(document).ready(function () {
         $('#shareBubble').hide();
-        $('#shareButton').click(function () {
+        $('#contactUs').click(function () {
           $('#shareBubble').show();
           var currentUrl = window.location.href;
           $('#shareGuidUrl').val(currentUrl);
